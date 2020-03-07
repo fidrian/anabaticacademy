@@ -1,4 +1,4 @@
-# ebookhub
+# anabaticacademy
 
 ## Prerequisites
 
@@ -9,5 +9,5 @@ Install the following:
 ### Create database
 
 ```
-CREATE DATABASE ebookhub CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE anabatic_academy CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
