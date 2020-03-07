@@ -299,14 +299,13 @@ function getSoldNonFiksi($bulan){
 </div>
 
 <script src="js/jquery-3.1.0.min.js"> </script>
-<!-- <script src="bootstrap/dist/js/bootstrap.min.js"></script> -->
 
 <script src="plugins/jquery/jquery.min.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="dist/js/adminlte.js"></script>
 <script src="js/Chart.min.js"></script>
 <?php
-   $label = ['AGUSTUS', 'SEPTEMBER', 'OKTOBER', 'NOVEMBER', 'DESEMBER'];
+   $label = ['JANUARI', 'FEBRUARI', 'MARET', 'APRIL', 'MEI'];
 ?>
 <script>
 $(function () {
@@ -330,7 +329,7 @@ $(function () {
           backgroundColor: '#007bff',
           borderColor    : '#007bff',
       data           : <?php
-                        for($bulan=8;$bulan<=12;$bulan++){
+                        for($bulan=1;$bulan<=5;$bulan++){
                           $jumlah_proses[] = getStatus($bulan, "Dalam Proses Review");
                         }
                        echo json_encode($jumlah_proses); ?>
@@ -339,7 +338,7 @@ $(function () {
           backgroundColor: '#ced4da',
           borderColor    : '#ced4da',
 		  data           : <?php
-                        for($bulan=8;$bulan<=12;$bulan++){
+                        for($bulan=1;$bulan<=5;$bulan++){
                           $jumlah_diterima[] = getStatus($bulan, "Sudah Diterbitkan");
                         }
                        echo json_encode($jumlah_diterima); ?>
@@ -386,15 +385,11 @@ $(function () {
   var $visitorsChart = $('#visitors-chart')
   var visitorsChart  = new Chart($visitorsChart, {
     data   : {
-      // labels  : ['September', 'Oktober', 'November'],
       labels  : <?php echo json_encode($label); ?>,
       datasets: [{
         type                : 'line',
-        // data                : [12, 10, 12, 17,10],
-
-
         data                : <?php
-                                for($bulan=8;$bulan<=12;$bulan++){
+                                for($bulan=1;$bulan<=5;$bulan++){
                                   $jumlah_nf[] = getSoldNonFiksi($bulan);
                                 }
                               echo json_encode($jumlah_nf);
@@ -408,7 +403,7 @@ $(function () {
         {
           type                : 'line',
           data                : <?php
-                                  for($bulan=8;$bulan<=12;$bulan++){
+                                  for($bulan=1;$bulan<=5;$bulan++){
                                     $jumlah_f[] = getSoldFiksi($bulan);
                                   }
                                   echo json_encode($jumlah_f);
