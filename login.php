@@ -17,9 +17,7 @@
 		session_start();
 		
 		$username = $_POST['username'];
-		$password = $_POST['password']; 
-		// $email = $_POST['email']; 
-		// $nama_lengkap = $_POST['nama_lengkap']; 
+		$password = $_POST['password'];  
 				
 		$queryLogin = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
 		$resultLogin = mysqli_query($databaseConnection,$queryLogin);
@@ -37,12 +35,7 @@
 			$_SESSION["role"] = $row["role"];
 			$_SESSION["email"] = $row["email"];
 			$_SESSION["nama_lengkap"] = $row["nama_lengkap"];
-			
-			// if ($row["role"] === "user"){
-			// 	header("Location: shop.php");
-			// }else if ($row["role"] === "penulis"){
-			// 	header("Location: upload.php");
-      // }else 
+			 
       if ($row["role"] === "editor"){
 				header("Location: daftar-pengajuan.php");
 			}else if ($row["role"] === "admin"){

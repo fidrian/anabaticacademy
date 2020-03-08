@@ -23,7 +23,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ebookhub</title>
+    <title>Anabatic Academy</title>
 
 		<!-- FAVICON -->
 		<link rel="shortcut icon" href="images/favicon.png">

@@ -8,19 +8,6 @@
 	$databaseName = "sql12326339";
 	
 	$databaseConnection = mysqli_connect($databaseServer, $databaseUsername, $databasePassword, $databaseName);
-	// $databaseConnection = pg_connect("postgres://kovxbaeuzktubz:eaa8f9f8363b08decb33167d1f58990be497f0f912b92bf5a596eb5869cb9a14@ec2-54-243-239-199.compute-1.amazonaws.com:5432/d649uh5394brc8");
-
-	// function exception_error_handler($errno, $errstr, $errfile, $errline ) {
-	// 	throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
-	// }
-	// set_error_handler("exception_error_handler");
-	
-	// try {
-	// 	$databaseConnection = mysqli_connect($databaseServer, $databaseUsername, $databasePassword, $databaseName);
-	// 	$conn=@pg_connect("postgres://ec2-54-243-239-199.compute-1.amazonaws.com:5432/d649uh5394brc8?user=kovxbaeuzktubz&password=eaa8f9f8363b08decb33167d1f58990be497f0f912b92bf5a596eb5869cb9a14&ssl=true");
-	// } Catch (Exception $e) {
-	// 	Echo $e->getMessage();
-	// }
 
 	if (!$databaseConnection){
 		die ("Connection to database failed");
