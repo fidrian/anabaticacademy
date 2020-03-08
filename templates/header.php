@@ -120,7 +120,7 @@
                   echo '
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="lihat-profil.php">Profil</a><br/>
-                  <a class="dropdown-item" href="statistik2.php">Statistik</a><br />  
+                  <a class="dropdown-item" href="statistik.php">Statistik</a><br />  
                   ';
                 }else{
                   echo'
