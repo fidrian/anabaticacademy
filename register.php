@@ -24,7 +24,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="register-title">Daftar Akun Ebookhub</h1>
+        <h1 class="register-title">Daftar Akun Anabatic Learning Academy</h1>
       </div>
 
       <div class="col-md-9 form-register-group">
@@ -35,7 +35,7 @@
           <input type="password" class="form-control form-register" id="insert-password" name="password" placeholder="Kata sandi..." required>
           <input type="password" class="form-control form-register" placeholder="Ulangi kata sandi..." required>
           <label class="checkbox-inline">
-          <input type="checkbox" value="" required>Dengan pembuatan akun, Anda menyetujui <a href="syarat-dan-ketentuan.php">syarat & ketentuan</a> dari Ebookhub
+          <input type="checkbox" value="" required>Dengan pembuatan akun, Anda menyetujui <a href="syarat-dan-ketentuan.php">syarat & ketentuan</a> dari Anabatic Learning Academy
           </label>
 
           <input type="hidden" id="insert-command" name="command" value="insert">
@@ -43,12 +43,12 @@
         </form>
       </div>
 
-      <div class="col-md-3">
+      <!-- <div class="col-md-3">
         <div class="login-social">
           <button type="button" class="btn btn-primary btn-block btn-fb"> <i class="fa fa-facebook"></i>&nbsp;&nbsp;Daftar dengan Facebook</button>
           <button type="button" class="btn btn-primary btn-block btn-google"> <i class="fa fa-google"></i>&nbsp;&nbsp;Daftar dengan Google</button>
         </div>
-      </div>
+      </div> -->
     </div>
 
 

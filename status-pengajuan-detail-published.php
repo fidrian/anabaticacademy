@@ -25,18 +25,18 @@
 		header('Location:status-pengajuan.php');
   }
 
-  function sold($id) {
-		$conn = connectDB();
+  // function sold($id) {
+	// 	$conn = connectDB();
 
-		$sql = "SELECT count(*) AS terjual FROM purchase WHERE book_id = '".$id."'";
+	// 	$sql = "SELECT count(*) AS terjual FROM purchase WHERE book_id = '".$id."'";
 
-		if(!$result = mysqli_query($conn, $sql)) {
-			die("Error: $sql");
-		}
+	// 	if(!$result = mysqli_query($conn, $sql)) {
+	// 		die("Error: $sql");
+	// 	}
 
-		mysqli_close($conn);
-		return $result;
-	}
+	// 	mysqli_close($conn);
+	// 	return $result;
+	// }
 ?>
 
 <div class="status-pengajuan-detail section-margin">
@@ -115,9 +115,9 @@
       if (mysqli_num_rows($detail_publish) > 0) {
         $row = mysqli_fetch_assoc($detail_publish);
         $book_id = $row['book_id'];
-        $sold = sold("$book_id");
-        if (mysqli_num_rows($sold) > 0) {
-          while ($row_sold = mysqli_fetch_assoc($sold)){
+        // $sold = sold("$book_id");
+        // if (mysqli_num_rows($sold) > 0) {
+        //   while ($row_sold = mysqli_fetch_assoc($sold)){
             $olddate = $row['publish_date'];
             $bulan = array (1 =>   	'Januari',
                                     'Februari',
@@ -143,7 +143,7 @@
                 <table class="table detail-pengajuan table-hover table-bordered table-responsive">
                   <tbody>
                     <tr>
-                      <td><strong>Judul Buku</strong></td>
+                      <td><strong>Judul Materi</strong></td>
                       <td id="judulBuku">'.$row['title'].'</td>
                     </tr>
                     <tr>
@@ -155,16 +155,12 @@
                       <td id="kategori">'.$row['category'].'</td>
                     </tr>
                     <tr>
-                      <td><strong>Deskripsi/Sinopsis Buku</strong></td>
+                      <td><strong>Deskripsi/Sinopsis Materi</strong></td>
                       <td id="deskripsiBuku">'.$row['description'].'</td>
                     </tr>
                     <tr>
                       <td><strong>Tanggal Terbit</strong></td>
                       <td id="tanggalUpload">'.$tanggal.'</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Jumlah Terjual</strong></td>
-                      <td id="terjual">'.$row_sold['terjual'].'</td>
                     </tr>
                     <tr>
                       <td><strong>Status Pengajuan</strong></td>
@@ -174,8 +170,8 @@
                 </table>
               </div>
             </div>';
-          }
-        }
+        //   }
+        // }
 			}
 		  ?>
 

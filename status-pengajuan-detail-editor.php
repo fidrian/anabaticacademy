@@ -112,7 +112,7 @@ function daftarBuku($table) {
   								$tanggal = $split[2] . ' ' . $bulan[(int)$split[1]] . ' ' . $split[0];
                   echo '
                   <tr>
-                  <td><strong>Judul Buku</strong></td>
+                  <td><strong>Judul Materi</strong></td>
                   <td>'.$row[1].'</td>
                 </tr>
                 <tr>
@@ -124,7 +124,7 @@ function daftarBuku($table) {
                   <td>'.$row[3].'</td>
                 </tr>
                 <tr>
-                  <td><strong>Deskripsi/Sinopsis Buku</strong></td>
+                  <td><strong>Deskripsi/Sinopsis Materi</strong></td>
                   <td>'.$row[4].'</td>
                 </tr>
                 <tr>
@@ -166,7 +166,7 @@ function daftarBuku($table) {
         <div class="output">
           <div class="form-publish">
             <div class="text-center">
-              <h2>Masukkan info buku untuk diterbitkan</h2>
+              <h2>Masukkan info materi untuk diterbitkan</h2>
             </div>
 
             <form action="services/sell.php" method="post" enctype="multipart/form-data">
@@ -225,7 +225,7 @@ function daftarBuku($table) {
 
               <div class="form-group">
                 <label for="exampleFormControlFile1">
-                  Pilih Cover Buku
+                  Pilih Cover Materi
                 </label>
                 <input type="file" id="insert-fileCover" name="fileCover" required>
               </div>

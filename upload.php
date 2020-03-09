@@ -28,11 +28,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="register-title">Unggah Buku</h1>
+        <h1 class="register-title">Unggah Materi</h1>
       </div>
       <div class="col-md-9 form-register-group">
         <form action="services/upload.php" method="post" enctype="multipart/form-data">
-          <input type="text" class="form-control form-register" id="insert-judulBuku" name="judulBuku" placeholder="Judul buku..." required>
+          <input type="text" class="form-control form-register" id="insert-judulBuku" name="judulBuku" placeholder="Judul materi..." required>
           <input type="text" class="form-control form-register" id="insert-namaPenulis" name="namaPenulis" placeholder="Nama penulis..." required>
           <br>
           <div class="form-group">
@@ -65,12 +65,12 @@
           </div>
 
           <div class="form-group">
-           <textarea class="form-control" rows="5" id="comment" name="deskripsiBuku" placeholder="Deskripsi/Sinopsis buku..." required></textarea>
+           <textarea class="form-control" rows="5" id="comment" name="deskripsiBuku" placeholder="Deskripsi/Sinopsis materi..." required></textarea>
           </div>
 
           <div class="form-group">
             <label for="exampleFormControlFile1">
-              Format buku dalam bentuk .doc atau .docx. Format penulisan dan layout dapat melihat pada halaman <a href="#">ini.</a> Ukuran file maksimal 50 MB.
+              Format materi dalam bentuk .doc, .docx, .pdf, .ppt, .mp3, .mp4, atau .wmv. Format penulisan dan layout dapat melihat pada halaman <a href="#">ini.</a> Ukuran file maksimal 50 MB.
             </label>
             <input type="file" class="form-control-file" name="fileToUpload" id="exampleFormControlFile1" required>
           </div>

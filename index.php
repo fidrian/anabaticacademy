@@ -63,13 +63,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>EBOOKHUB.ID</title>
+		<title>ANABATIC ACADEMY</title>
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 	    <link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
 	<body>
 		<div class="row">
-			<h1 class="title">EBOOKHUB.ID</h1>
+			<h1 class="title">ANABATIC ACADEMY</h1>
 			<button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#insertModal">
 				Log in
 			</button>	
