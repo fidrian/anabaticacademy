@@ -69,7 +69,7 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="landing.php"><img alt="Ebookhub.id" src="images/logo.png" class="img-responsive" /></a>
+          <a class="navbar-brand" href="landing.php"><img alt="Ebookhub.id" src="images/anabatic-academy.png" class="img-responsive" /></a>
 
         </div>
 
