@@ -65,7 +65,7 @@
           </div>
 
           <div class="form-group">
-           <textarea class="form-control" rows="5" id="comment" name="deskripsiBuku" placeholder="Deskripsi/Sinopsis materi..." required></textarea>
+           <textarea class="form-control" rows="5" id="comment" name="deskripsiBuku" placeholder="Deskripsi materi..." required></textarea>
           </div>
 
           <div class="form-group">

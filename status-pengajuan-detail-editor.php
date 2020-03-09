@@ -124,7 +124,7 @@ function daftarBuku($table) {
                   <td>'.$row[3].'</td>
                 </tr>
                 <tr>
-                  <td><strong>Deskripsi/Sinopsis Materi</strong></td>
+                  <td><strong>Deskripsi Materi</strong></td>
                   <td>'.$row[4].'</td>
                 </tr>
                 <tr>
@@ -220,7 +220,7 @@ function daftarBuku($table) {
                 <input type="text" class="form-control form-register" id="insert-sku" name="sku" placeholder="SKU..." required>
               </div>
               <div class="form-group">
-               <textarea class="form-control" rows="5" id="insert-deskripsi" name="deskripsiBuku" placeholder="Deskripsi/Sinopsis buku..." required></textarea>
+               <textarea class="form-control" rows="5" id="insert-deskripsi" name="deskripsiBuku" placeholder="Deskripsi materi..." required></textarea>
               </div>
 
               <div class="form-group">

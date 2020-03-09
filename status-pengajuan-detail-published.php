@@ -155,7 +155,7 @@
                       <td id="kategori">'.$row['category'].'</td>
                     </tr>
                     <tr>
-                      <td><strong>Deskripsi/Sinopsis Materi</strong></td>
+                      <td><strong>Deskripsi Materi</strong></td>
                       <td id="deskripsiBuku">'.$row['description'].'</td>
                     </tr>
                     <tr>
