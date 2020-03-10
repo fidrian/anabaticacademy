@@ -2,10 +2,10 @@
 require_once("templates/header.php");
 
 function connectDB() {
-  $servername = "sql12.freesqldatabase.com";
-  $username = "sql12325229";
-  $password = "2hMd8rTwXQ";
-  $dbname = "sql12325229";
+  $servername = "sql12.freemysqlhosting.net";
+  $username = "sql12326339";
+  $password = "FtkVQKUiHk";
+  $dbname = "sql12326339";
 
   // Create connection
   $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -82,7 +82,7 @@ function daftarBuku($table) {
           <table class="table table-hover table-bordered table-responsive">
             <thead>
               <tr>
-                <th class="text-center tabel-header">Judul Buku</th>
+                <th class="text-center tabel-header">Judul Materi</th>
                 <th class="text-center tabel-header">Nama Penulis</th>
                 <th class="text-center tabel-header">Status</th>
                 <th class="text-center tabel-header">Tanggal Unggah</th>
@@ -134,7 +134,7 @@ function daftarBuku($table) {
           <table class="table table-hover table-bordered table-responsive">
             <thead>
               <tr>
-                <th class="text-center tabel-header">Judul Buku</th>
+                <th class="text-center tabel-header">Judul Materi</th>
                 <th class="text-center tabel-header">Kategori</th>
                 <th class="text-center tabel-header">Tanggal Terbit</th>
                 <th class="text-center tabel-header">Status</th>

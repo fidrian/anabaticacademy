@@ -23,7 +23,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ebookhub</title>
+    <title>Anabatic Academy</title>
 
 		<!-- FAVICON -->
 		<link rel="shortcut icon" href="images/favicon.png">
@@ -69,7 +69,7 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="landing.php"><img alt="Ebookhub.id" src="images/logo.png" class="img-responsive" /></a>
+          <a class="navbar-brand" href="landing.php"><img alt="Ebookhub.id" src="images/anabatic-academy.png" class="img-responsive" /></a>
 
         </div>
 
@@ -120,7 +120,7 @@
                   echo '
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="lihat-profil.php">Profil</a><br/>
-                  <a class="dropdown-item" href="statistik2.php">Statistik</a><br />  
+                  <a class="dropdown-item" href="statistik.php">Statistik</a><br />  
                   ';
                 }else{
                   echo'

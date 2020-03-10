@@ -1,9 +1,9 @@
 <?php
 	
-	$databaseServer = "sql12.freesqldatabase.com";
-	$databaseUsername = "sql12325229";
-	$databasePassword = "2hMd8rTwXQ";
-	$databaseName = "sql12325229";
+	$databaseServer = "sql12.freemysqlhosting.net";
+	$databaseUsername = "sql12326339";
+	$databasePassword = "FtkVQKUiHk";
+	$databaseName = "sql12326339";
 	
 	$databaseConnection = mysqli_connect($databaseServer, $databaseUsername, $databasePassword, $databaseName);
 
@@ -17,9 +17,7 @@
 		session_start();
 		
 		$username = $_POST['username'];
-		$password = $_POST['password']; 
-		// $email = $_POST['email']; 
-		// $nama_lengkap = $_POST['nama_lengkap']; 
+		$password = $_POST['password'];  
 				
 		$queryLogin = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
 		$resultLogin = mysqli_query($databaseConnection,$queryLogin);
@@ -37,16 +35,11 @@
 			$_SESSION["role"] = $row["role"];
 			$_SESSION["email"] = $row["email"];
 			$_SESSION["nama_lengkap"] = $row["nama_lengkap"];
-			
-			// if ($row["role"] === "user"){
-			// 	header("Location: shop.php");
-			// }else if ($row["role"] === "penulis"){
-			// 	header("Location: upload.php");
-      // }else 
+			 
       if ($row["role"] === "editor"){
 				header("Location: daftar-pengajuan.php");
 			}else if ($row["role"] === "admin"){
-				header("Location: statistik2.php");
+				header("Location: statistik.php");
 			}
 			else{
 				header("Location: landing.php");
@@ -69,7 +62,7 @@
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <div class="modal-title">
-          <h1 class="text-center">Masuk ke Akun Ebookhub</h1>
+          <h1 class="text-center">Masuk ke Anabatic Learning Academy</h1>
         </div>
 
         <div class="modal-form text-center input-login">
@@ -85,25 +78,9 @@
       <div class="modal-footer">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h4>ATAU</h4>
-          </div>
+            <a href="#">Lupa password?</a>
 
-          <div class="login-social">
-            <div class="col-md-6">
-              <button type="button" class="btn btn-primary btn-block btn-fb"> <i class="fa fa-facebook"></i>&nbsp;&nbsp;Facebook</button>
-            </div>
-
-            <div class="col-md-6">
-              <button type="button" class="btn btn-primary btn-block btn-google"> <i class="fa fa-google"></i>&nbsp;&nbsp;Google</button>
-            </div>
-          </div>
-
-          <div class="col-md-12 text-center">
-            <div class="belum-daftar">
-              <a href="#">Lupa password?</a>
-
-              <p>Belum punya akun? Daftar di <a href="register.php">sini</a> </p>
-            </div>
+            <p>Belum punya akun? Daftar di <a href="register.php">sini</a> </p>
           </div>
         </div>
       </div>

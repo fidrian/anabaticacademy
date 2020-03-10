@@ -2,10 +2,10 @@
   require_once("templates/header.php");
 
   function connectDB() {
-		$servername = "sql12.freesqldatabase.com";
-		$username = "sql12325229";
-		$password = "2hMd8rTwXQ";
-		$dbname = "sql12325229";
+		$servername = "sql12.freemysqlhosting.net";
+		$username = "sql12326339";
+		$password = "FtkVQKUiHk";
+		$dbname = "sql12326339";
 
 		// Create connection
 		$conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -112,7 +112,7 @@ function daftarBuku($table) {
   								$tanggal = $split[2] . ' ' . $bulan[(int)$split[1]] . ' ' . $split[0];
                   echo '
                   <tr>
-                  <td><strong>Judul Buku</strong></td>
+                  <td><strong>Judul Materi</strong></td>
                   <td>'.$row[1].'</td>
                 </tr>
                 <tr>
@@ -124,7 +124,7 @@ function daftarBuku($table) {
                   <td>'.$row[3].'</td>
                 </tr>
                 <tr>
-                  <td><strong>Deskripsi/Sinopsis Buku</strong></td>
+                  <td><strong>Deskripsi Materi</strong></td>
                   <td>'.$row[4].'</td>
                 </tr>
                 <tr>
@@ -166,7 +166,7 @@ function daftarBuku($table) {
         <div class="output">
           <div class="form-publish">
             <div class="text-center">
-              <h2>Masukkan info buku untuk diterbitkan</h2>
+              <h2>Masukkan info materi untuk diterbitkan</h2>
             </div>
 
             <form action="services/sell.php" method="post" enctype="multipart/form-data">
@@ -220,12 +220,12 @@ function daftarBuku($table) {
                 <input type="text" class="form-control form-register" id="insert-sku" name="sku" placeholder="SKU..." required>
               </div>
               <div class="form-group">
-               <textarea class="form-control" rows="5" id="insert-deskripsi" name="deskripsiBuku" placeholder="Deskripsi/Sinopsis buku..." required></textarea>
+               <textarea class="form-control" rows="5" id="insert-deskripsi" name="deskripsiBuku" placeholder="Deskripsi materi..." required></textarea>
               </div>
 
               <div class="form-group">
                 <label for="exampleFormControlFile1">
-                  Pilih Cover Buku
+                  Pilih Cover Materi
                 </label>
                 <input type="file" id="insert-fileCover" name="fileCover" required>
               </div>

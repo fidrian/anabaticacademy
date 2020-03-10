@@ -537,7 +537,7 @@ box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
 
 .row-footer-2{
   margin: 0 50px 0 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .list-inline i{
@@ -669,10 +669,6 @@ box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);
 
 .login-social{
   margin: 50px auto;
-}
-
-.belum-daftar{
-  margin-top: 50px;
 }
 
 .modal-footer{

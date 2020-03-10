@@ -2,25 +2,12 @@
 	
 	header("Location: landing.php");
 
-	$databaseServer = "sql12.freesqldatabase.com";
-	$databaseUsername = "sql12325229";
-	$databasePassword = "2hMd8rTwXQ";
-	$databaseName = "sql12325229";
+	$databaseServer = "sql12.freemysqlhosting.net";
+	$databaseUsername = "sql12326339";
+	$databasePassword = "FtkVQKUiHk";
+	$databaseName = "sql12326339";
 	
 	$databaseConnection = mysqli_connect($databaseServer, $databaseUsername, $databasePassword, $databaseName);
-	// $databaseConnection = pg_connect("postgres://kovxbaeuzktubz:eaa8f9f8363b08decb33167d1f58990be497f0f912b92bf5a596eb5869cb9a14@ec2-54-243-239-199.compute-1.amazonaws.com:5432/d649uh5394brc8");
-
-	// function exception_error_handler($errno, $errstr, $errfile, $errline ) {
-	// 	throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
-	// }
-	// set_error_handler("exception_error_handler");
-	
-	// try {
-	// 	$databaseConnection = mysqli_connect($databaseServer, $databaseUsername, $databasePassword, $databaseName);
-	// 	$conn=@pg_connect("postgres://ec2-54-243-239-199.compute-1.amazonaws.com:5432/d649uh5394brc8?user=kovxbaeuzktubz&password=eaa8f9f8363b08decb33167d1f58990be497f0f912b92bf5a596eb5869cb9a14&ssl=true");
-	// } Catch (Exception $e) {
-	// 	Echo $e->getMessage();
-	// }
 
 	if (!$databaseConnection){
 		die ("Connection to database failed");
@@ -76,13 +63,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>EBOOKHUB.ID</title>
+		<title>ANABATIC ACADEMY</title>
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 	    <link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
 	<body>
 		<div class="row">
-			<h1 class="title">EBOOKHUB.ID</h1>
+			<h1 class="title">ANABATIC ACADEMY</h1>
 			<button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#insertModal">
 				Log in
 			</button>	

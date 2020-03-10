@@ -3,10 +3,10 @@
   session_start();
 	function connectDB() {
 		// require 'config/connect.php';
-		$servername = "sql12.freesqldatabase.com";
-		$username = "sql12325229";
-		$password = "2hMd8rTwXQ";
-		$dbname = "sql12325229";
+		$servername = "sql12.freemysqlhosting.net";
+		$username = "sql12326339";
+		$password = "FtkVQKUiHk";
+		$dbname = "sql12326339";
 
 		// Create connection
 		$conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -89,7 +89,7 @@
             <table class="table detail-pengajuan table-hover table-bordered table-responsive">
               <tbody>
                 <tr>
-                  <td><strong>Judul Buku</strong></td>
+                  <td><strong>Judul Materi</strong></td>
                   <td id="judulBuku">'.$row['title'].'</td>
                 </tr>
                 <tr>
@@ -101,7 +101,7 @@
                   <td id="kategori">'.$row['category'].'</td>
                 </tr>
                 <tr>
-                  <td><strong>Deskripsi/Sinopsis Buku</strong></td>
+                  <td><strong>Deskripsi Materi</strong></td>
                   <td id="deskripsiBuku">'.$row['description'].'</td>
                 </tr>';
                 //Fungsi if berikut untuk menampilkan detail buku diterbitkan pada mode editor, untuk mode user di status-pengajuan-detail-published
