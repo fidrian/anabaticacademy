@@ -25,7 +25,7 @@ $target_file = $target_dir . basename($name_file);
 $uploadOk = 1;
 $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if file is on .doc or .docx format
-$type_apr = array('doc','docx');
+$type_apr = array('doc','docx','pdf','pptx','mp3','mp4','wmv');
 $x = explode('.', $name_file);
 $ekstensi = strtolower(end($x));
 if(isset($_POST["submit"])) {
@@ -33,7 +33,7 @@ if(isset($_POST["submit"])) {
         // echo "File is a document.";
         $uploadOk = 1;
     } else {
-        echo "File is not a document.";
+        echo "Sorry, file not allowed.";
         $uploadOk = 0;
     }
 }
@@ -49,7 +49,8 @@ if ($_FILES["fileToUpload"]["size"] > 52428800) {
 }
 // Allow certain file formats
 if($fileType != "doc" && $fileType != "docx" && $fileType != "pdf"
-&& $fileType != "jpg" && $fileType != "mp3" && $fileType != "mp4") {
+&& $fileType != "pptx" && $fileType != "mp3" && $fileType != "mp4"
+&& $fileType != "wmv") {
     echo "Sorry, file not allowed.";
     $uploadOk = 0;
 }
