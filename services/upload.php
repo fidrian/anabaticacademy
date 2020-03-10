@@ -49,8 +49,8 @@ if ($_FILES["fileToUpload"]["size"] > 52428800) {
 }
 // Allow certain file formats
 if($fileType != "doc" && $fileType != "docx" && $fileType != "pdf"
-&& $fileType != "txt" ) {
-    echo "Sorry, only DOC, DOCX, PDF, TXT files are allowed.";
+&& $fileType != "jpg" && $fileType != "mp3" && $fileType != "mp4") {
+    echo "Sorry, file not allowed.";
     $uploadOk = 0;
 }
 // Check if $uploadOk is set to 0 by an error
