@@ -62,7 +62,7 @@
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <div class="modal-title">
-          <h1 class="text-center">Masuk ke Anabatic Learning Academy</h1>
+          <h1 class="text-center">Masuk ke Anabatic Academy</h1>
         </div>
 
         <div class="modal-form text-center input-login">
