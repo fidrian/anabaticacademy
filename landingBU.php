@@ -239,8 +239,7 @@
 <!-- End Welcome -->
 
 <!-- Begin How-to-use -->
-<!-- ================================================================================ -->
-<!-- <div class="how-to-use">
+<div class="how-to-use">
   <div class="container">
     <div class="row">
 
@@ -278,13 +277,176 @@
 
     </div>
 </div>
-</div> -->
-
-<!-- ========================================================================================= -->
+</div>
 <!-- End How-to-use -->
 
+<!-- Begin Baru diterbitkan -->
+<div class="baru-diterbitkan">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center">Buku Baru Diterbitkan</h1>
+      </div>
+
+      <div class="col-lg-12 text-center">
+        <div id="owl-baru-diterbitkan" class="owl-carousel owl-theme">
+          <?php
+              $daftarbuku = daftarBuku("book");
+              if(isset($_SESSION['namauser'])) {
+                $daftarpinjaman = selectRowsFromSubmission();
+                  $arraysubmission = array();
+                  while ($baris = mysqli_fetch_row($daftarpinjaman)) {
+                    array_push($arraysubmission, $baris[1]);
+                  }
+              }
+
+            while ($row = mysqli_fetch_row($daftarbuku)) {
+              echo '
+                    <div class="item">
+                      <div class="card box-shadow">
+                        <img class="card-img-top img-fluid" style="height:400px;" src="'.$row[1].'" alt="card-img">
+                        <div class="card-body">
+                          <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
+                          <p class="card-text ebook-author">'.$row[3].'</p>
+                          <p class="card-text ebook-source">'.$row[4].'</p>';
+                          if($row[5] > 0) {
+                            echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row[5].'</strong></h4>';
+                          } else {
+                            echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
+                          }
+                          echo '
+                          <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-shopping-cart"> </i>&nbsp; Beli</a>
+                          ';
+                        echo '
+                        </div>
+                      </div>
+                    </div>';
+            }
+          ?>
+        </div>
+        <div class="customNavigation">
+          <a class="btn prev"> <i class="fa fa-angle-left"></i> </a>
+          <a class="btn next"> <i class="fa fa-angle-right"></i> </a>
+          <!-- <a class="btn play">Autoplay</a>
+          <a class="btn stop">Stop</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Baru diterbitkan -->
+
+<!-- Begin Buku terpopuler -->
+<div class="baru-diterbitkan">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center">Buku Terpopuler</h1>
+      </div>
+
+      <div class="col-lg-12 text-center">
+        <div id="owl-buku-terpopuler" class="owl-carousel owl-theme">
+        <?php
+              $arraybook = selectAllBooks();
+              for ($i=0; $i < count($arraybook); $i++) {
+                $buku = selectAllFromBook($arraybook[$i]);
+                while ($row = mysqli_fetch_row($buku)) {
+                  echo '
+                  <div class="item">
+                    <div class="card box-shadow">
+                      <img class="card-img-top img-fluid" style="height:400px;" src="'.$row[1].'" alt="card-img">
+                      <div class="card-body">
+                        <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
+                        <p class="card-text ebook-author">'.$row[3].'</p>
+                        <p class="card-text ebook-source">'.$row[4].'</p>';
+                        if($row[6] > 0) {
+                          echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row[6].'</strong></h4>';
+                        } else {
+                          echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
+                        }
+                        echo '
+                        <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-shopping-cart"> </i>&nbsp; Beli</a>
+                        ';
+                      echo '
+                      </div>
+                    </div>
+                  </div>';
+                }
+              }
+          ?>
+        </div>
+
+        <div class="customNavigation">
+          <a class="btn prev2"><i class="fa fa-angle-left"></i></a>
+          <a class="btn next2"><i class="fa fa-angle-right"></i></a>
+          <!-- <a class="btn play">Autoplay</a>
+          <a class="btn stop">Stop</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- End Buku terpopuler -->
+
+
+<!-- Begin Kategori -->
+<div class="kategori">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-sm-12">
+        <h1 class="text-center">Kategori</h1>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="hvrbox">
+          <div class="centered"><h1>Non-Fiksi</h1></div>
+			    <img src="images/non-fiction.jpg" alt="Fiksi" class="hvrbox-layer_bottom">
+			    <div class="hvrbox-layer_top hvrbox-layer_slideup hvr-non-fiction">
+				    <div class="hvrbox-text">
+              <ul>
+              <?php
+                  $daftarnon = daftarNon("category");
+                  while ($rownon = mysqli_fetch_row($daftarnon)) {
+                    echo '
+                    <li><a href="shop-category.php?id='.$rownon[1].'&offset=0">'.$rownon[1].'</a></li>
+                    ';
+                  }
+                ?>
+              </ul>
+            </div>
+			    </div>
+		    </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="hvrbox">
+          <div class="centered"><h1>Fiksi</h1></div>
+			    <img src="images/fiction.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+			    <div class="hvrbox-layer_top hvrbox-layer_slideup hvr-fiction">
+				    <div class="hvrbox-text">
+              <ul>
+              <?php
+                  $daftarfiks = daftarFiksi("category");
+                  while ($rowfiks = mysqli_fetch_row($daftarfiks)) {
+                    echo '
+                    <li><a href="shop-category.php?id='.$rowfiks[1].'&offset=0">'.$rowfiks[1].'</a></li>
+                    ';
+                  }
+                ?>
+              </ul>
+            </div>
+			    </div>
+		    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Kategori -->
+
 <!-- Begin partner -->
-<!-- <div class="partner">
+<div class="partner">
   <div class="container text-center">
     <div class="row">
       <div class="col-lg-12">
@@ -305,7 +467,7 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 <!-- End partner -->
 
 <!-- Begin Subscribe -->

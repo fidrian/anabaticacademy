@@ -21,26 +21,26 @@
 ?>
 
 <div class="register">
-  <div class="container">
+  <div class="container ">
     <div class="row">
-      <div class="col-md-12">
-        <h1 class="register-title">Daftar Akun Anabatic Learning Academy</h1>
-      </div>
-
-      <div class="col-md-9 form-register-group">
-        <form action="services/register.php" method="post">
-          <input type="text" class="form-control form-register" name="pengguna" id="insert-username" placeholder="Nama pengguna..." required>
-          <input type="text" class="form-control form-register" name="lengkap" placeholder="Nama lengkap..." required>
-          <input type="email" class="form-control form-register" name="email" id="insert-email" placeholder="E-mail..." required>
-          <input type="password" class="form-control form-register" id="insert-password" name="password" placeholder="Kata sandi..." required>
-          <input type="password" class="form-control form-register" placeholder="Ulangi kata sandi..." required>
-          <label class="checkbox-inline">
-          <input type="checkbox" value="" required>Dengan pembuatan akun, Anda menyetujui <a href="syarat-dan-ketentuan.php">syarat & ketentuan</a> dari Anabatic Learning Academy
-          </label>
-
-          <input type="hidden" id="insert-command" name="command" value="insert">
-          <button type="submit" class="btn btn-primary btn-block btn-ebookhub btn-register">Daftar</button>
-        </form>
+      <div class="pt-2 pl-5 pr-4 pb-5 m-auto w-60 border">
+        <!-- <div class="col-md-8 "> -->
+          <h1 class="register-title">Daftar Akun Anabatic Learning Academy</h1>
+  
+          <form action="services/register.php" method="post" class="form-register-group">
+            <input type="text" class="form-control form-register" name="pengguna" id="insert-username" placeholder="Nama pengguna..." required>
+            <input type="text" class="form-control form-register" name="lengkap" placeholder="Nama lengkap..." required>
+            <input type="email" class="form-control form-register" name="email" id="insert-email" placeholder="E-mail..." required>
+            <input type="password" class="form-control form-register" id="insert-password" name="password" placeholder="Kata sandi..." required>
+            <input type="password" class="form-control form-register" placeholder="Ulangi kata sandi..." required>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="" required>Dengan pembuatan akun, Anda menyetujui <a href="syarat-dan-ketentuan.php">syarat & ketentuan</a> dari Anabatic Learning Academy
+            </label>
+  
+            <input type="hidden" id="insert-command" name="command" value="insert">
+            <button type="submit" class="btn btn-primary btn-block btn-ebookhub btn-register">Daftar</button>
+          </form>
+        <!-- </div> -->
       </div>
 
       <!-- <div class="col-md-3">

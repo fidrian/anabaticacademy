@@ -78,7 +78,7 @@
       <div class="modal-footer">
         <div class="row">
           <div class="col-md-12 text-center">
-            <a href="#">Lupa password?</a>
+            <!-- <a href="#">Lupa password?</a> -->
 
             <p>Belum punya akun? Daftar di <a href="register.php">sini</a> </p>
           </div>

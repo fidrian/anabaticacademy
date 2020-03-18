@@ -1,7 +1,7 @@
 <!-- Begin Footer -->
 <div class="footer">
   <div class="container">
-    <div class="row row-footer-1">
+    <div class="row row-footer-1 mb-5">
       <div class="col-md-4 col-sm-12">
         <h2>Tentang Kami</h2>
         <ul class="list-group">
@@ -24,7 +24,7 @@
         <img src="https://i.ibb.co/wM8WHBV/payments.png" alt="payments" class="payments">
       </div>
     </div>
-
+<!-- 
     <div class="row row-footer-2">
       <div class="col-md-4 col-sm-12">
         <h2>Ikuti Kami</h2>
@@ -34,7 +34,7 @@
           <li><a href="https://facebook.com"><i class="fa fa-facebook fa-footer"></i></a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 <!-- End Footer -->
