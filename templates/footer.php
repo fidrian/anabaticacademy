@@ -44,7 +44,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center copyright-text">
-        <h2>&copy;&nbsp;2019 <strong>Ebookhub.id</strong> oleh <strong>LiteHub</strong> </h2>
+        <h2>&copy;&nbsp;2020 <strong>Anabatic Learning Academy</strong></h2>
       </div>
     </div>
   </div>
