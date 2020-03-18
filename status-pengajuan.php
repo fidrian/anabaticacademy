@@ -49,7 +49,7 @@ session_start();
 ?>
 
 <br>
-<div class="status-pengajuan-detail section-mini-margin">
+<div class="status-pengajuan-detail section-margin">
   <div class="container">
 
     <div class="row">
