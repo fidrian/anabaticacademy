@@ -90,7 +90,7 @@
                 ?>
               </div>
             </li>
-            <li><a href="shop.php?offset=0">Shop</a></li>
+            <li><a href="shop.php?offset=0">Katalog</a></li>
 
             <li>
 

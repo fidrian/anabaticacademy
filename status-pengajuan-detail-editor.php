@@ -170,9 +170,8 @@ function daftarBuku($table) {
             </div>
 
             <form action="services/sell.php" method="post" enctype="multipart/form-data">
-              <input type="text" class="form-control form-register" id="insert-judulBuku" name="judulBuku" placeholder="Judul buku..." required>
+              <input type="text" class="form-control form-register" id="insert-judulBuku" name="judulBuku" placeholder="Judul materi..." required>
               <input type="text" class="form-control form-register" id="insert-namaPenulis" name="pengarangBuku" placeholder="Nama penulis..." required>
-              <input type="text" class="form-control form-register" id="insert-namaPenerbit" name="penerbitBuku" placeholder="Nama penerbit..." required>
               <input type="text" class="form-control form-register" id="insert-harga" name="stokBuku" placeholder="Harga..." required>
               <div class="form-group">
                 <label for="kategori"></label>
@@ -207,17 +206,10 @@ function daftarBuku($table) {
               <div class="form-group">
                 <label for="subkategori"></label>
                 <select class="form-control form-register form-group-kategori" id="insert-subkategori" name="subkategori" required>
-                  <!-- <option>-Pilih kategori-</option> -->
                   <option>-Pilih Sub Kategori-</option>
                   <option>Fiksi</option>
                   <option>Non Fiksi</option>
                 </select>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control form-register" id="insert-isbn" name="isbn" placeholder="ISBN..." required>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control form-register" id="insert-sku" name="sku" placeholder="SKU..." required>
               </div>
               <div class="form-group">
                <textarea class="form-control" rows="5" id="insert-deskripsi" name="deskripsiBuku" placeholder="Deskripsi materi..." required></textarea>

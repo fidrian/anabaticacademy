@@ -227,8 +227,7 @@
                           <img class="card-img-top img-fluid" style="height:300px;" src="'.$row[1].'" alt="card-img">
                           <div class="card-body">
                           <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
-                            <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[3].'</p>
-                            <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[4].'</p>';
+                            <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[3].'</p>';
                             if($row[5] > 0) {
                               echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row[5].'</strong></h4>';
                             } else {
