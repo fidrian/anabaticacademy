@@ -3,10 +3,10 @@
   session_start();
 	function connectDB() {
 		// require 'config/connect.php';
-		$servername = "sql12.freemysqlhosting.net";
-		$username = "sql12326339";
-		$password = "FtkVQKUiHk";
-		$dbname = "sql12326339";
+		$servername = "remotemysql.com";
+		$username = "gAhuN8MGYk";
+		$password = "6XeduFerLR";
+		$dbname = "gAhuN8MGYk";
 
 		// Create connection
 		$conn = mysqli_connect($servername, $username, $password, $dbname);

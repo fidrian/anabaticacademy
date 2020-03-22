@@ -2,10 +2,10 @@
 	
 	header("Location: landing.php");
 
-	$databaseServer = "sql12.freemysqlhosting.net";
-	$databaseUsername = "sql12326339";
-	$databasePassword = "FtkVQKUiHk";
-	$databaseName = "sql12326339";
+	$databaseServer = "remotemysql.com";
+	$databaseUsername = "gAhuN8MGYk";
+	$databasePassword = "6XeduFerLR";
+	$databaseName = "gAhuN8MGYk";
 	
 	$databaseConnection = mysqli_connect($databaseServer, $databaseUsername, $databasePassword, $databaseName);
 
