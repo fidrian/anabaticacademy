@@ -132,7 +132,7 @@ session_start();
   												);
   								$split = explode('-', $olddate);
   								$tanggal = $split[2] . ' ' . $bulan[(int)$split[1]] . ' ' . $split[0];
-  								if($row['status'] == "Dalam Proses Review"  || $row['status'] == "Dalam Proses Penyuntingan") {
+  								if($row['status'] == "Dalam Proses Review"  || $row['status'] == "Pengajuan Ditolak") {
   									echo'
   									<tbody>
   									<tr>
@@ -152,7 +152,7 @@ session_start();
           </table>
         </div>
 
-        <h2>Sudah Diterbitkan</h2>
+        <h2>Pengajuan Diterima</h2>
 
 
         <div class="table-details">
@@ -187,7 +187,7 @@ session_start();
 												);
 								$split = explode('-', $olddate);
 								$tanggal = $split[2] . ' ' . $bulan[(int)$split[1]] . ' ' . $split[0];
-								if($row['status'] == "Sudah Diterbitkan") {
+								if($row['status'] == "Pengajuan Diterima") {
 									echo'
 										<tbody>
 										<tr>

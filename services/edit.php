@@ -17,7 +17,7 @@
 
     function insertBuku($idUnggah) {
 		$conn = connectDB();		
-        $diterima = 'Dalam Proses Penyuntingan';
+        $diterima = 'Pengajuan Ditolak';
         // $tanggalUpload = date("Y-m-d");
         $sql = "UPDATE unggah SET status = '$diterima' WHERE no = '$idUnggah'";
         if($result = mysqli_query($conn, $sql)) {

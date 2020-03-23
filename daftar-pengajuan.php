@@ -93,7 +93,7 @@ function daftarBuku($table) {
             <?php
               $daftarbuku = daftarBuku("unggah");
               while ($row = mysqli_fetch_array($daftarbuku)) {
-                if($row[7] == "Dalam Proses Review" || $row[7] == "Dalam Proses Penyuntingan") {
+                if($row[7] == "Dalam Proses Review" || $row[7] == "Pengajuan Ditolak") {
                   $olddate = $row[6];
   								$bulan = array (1 =>   	'Januari',
   														'Februari',
@@ -127,7 +127,7 @@ function daftarBuku($table) {
           </table>
         </div>
 
-        <h2>Sudah Diterbitkan</h2>
+        <h2>Pengajuan Diterima</h2>
 
 
         <div class="table-details">
@@ -145,7 +145,7 @@ function daftarBuku($table) {
             <?php
               $daftarbuku = daftarBuku("unggah");
               while ($row = mysqli_fetch_array($daftarbuku)) {
-                if($row[7] == "Sudah Diterbitkan") {
+                if($row[7] == "Pengajuan Diterima") {
                   $conn = connectDB();
                   $publish = mysqli_query($conn, "SELECT publish_date FROM book WHERE upload_id = '$row[0]'");
                   while ($pd = mysqli_fetch_array($publish)) {
@@ -171,7 +171,7 @@ function daftarBuku($table) {
                   <td class="text-center">'.$row[1].'</td>
                   <td class="text-center">'.$row[3].'</td>
                   <td class="text-center">'.$tanggal.'</td>
-                  <td class="text-center">Sudah Diterbitkan</td>
+                  <td class="text-center">Pengajuan Diterima</td>
                   <td class="text-center"><a href="status-pengajuan-detail.php?id='.$row[0].'"><button type="button" class="btn btn-info">Detail</button></a></td>
                 </tr>
                   ';

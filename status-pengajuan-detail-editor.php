@@ -93,7 +93,7 @@ function daftarBuku($table) {
             <?php
               $daftarbuku = daftarBuku("unggah");
               while ($row = mysqli_fetch_array($daftarbuku)) {
-                if($row[7] == "Dalam Proses Review" || $row[7] == "Dalam Proses Penyuntingan") {
+                if($row[7] == "Dalam Proses Review" || $row[7] == "Pengajuan Ditolak") {
                   $olddate = $row[6];
   								$bulan = array (1 =>   	'Januari',
                                           'Februari',
@@ -141,8 +141,8 @@ function daftarBuku($table) {
 
                     <div class="button dropdown">
                       <select id="status-pengajuan" class="form-control" id="kategori" style="height: 100%;">
-                       <option>Dalam Proses Penyuntingan</option>
-                       <option value="form-publish">Sudah Diterbitkan</option>
+                       <option>Pengajuan Ditolak</option>
+                       <option value="form-publish">Pengajuan Diterima</option>
                       </select>
                     </div>
 
@@ -158,8 +158,8 @@ function daftarBuku($table) {
         </div>
         <br><br>
 
-        <!-- Jika select option nya = Sudah Diterbitkan, maka akan muncul form buku untuk diterbitkan
-             Use JavaScript ehehe.. :))
+        <!-- Jika select option nya = Pengajuan Diterima, maka akan muncul form materi untuk diterbitkan
+             Use JavaScript..
        -->
 
         <!-- Begin Form buku untuk diterbitkan -->

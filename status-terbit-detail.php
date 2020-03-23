@@ -67,7 +67,7 @@
               </tr>
               <tr>
                 <td><strong>Status Pengajuan</strong></td>
-                <td>Sudah Diterbitkan</td>
+                <td>Pengajuan Diterima</td>
               </tr>
               <tr>
                 <td><strong>Jumlah Terjual</strong></td>

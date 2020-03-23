@@ -16,7 +16,7 @@
 	}
 	session_start();
     $conn = connectDB();		
-    $diterima = 'Sudah Diterbitkan';
+    $diterima = 'Pengajuan Diterima';
 	$idUnggah = '0';
 	$filename = $_SESSION['fileEditor'];
     $sql = "UPDATE unggah SET status = '$diterima', file = '$filename' WHERE status = '$idUnggah'";

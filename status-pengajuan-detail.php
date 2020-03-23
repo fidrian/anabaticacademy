@@ -105,7 +105,7 @@
                   <td id="deskripsiBuku">'.$row['description'].'</td>
                 </tr>';
                 //Fungsi if berikut untuk menampilkan detail buku diterbitkan pada mode editor, untuk mode user di status-pengajuan-detail-published
-                if($row['status'] == "Sudah Diterbitkan") {
+                if($row['status'] == "Pengajuan Diterima") {
                   $conn = connectDB();
                   $publish = mysqli_query($conn, "SELECT publish_date FROM book WHERE upload_id = '$no'");
                   while ($pd = mysqli_fetch_array($publish)) {
@@ -133,7 +133,7 @@
                   ';
                   }
                 }
-                //Fungsi else digunakan untuk detail buku dengan status "Dalam proses review" dan "Dalam proses penyuntingan" pada mode user.
+                //Fungsi else digunakan untuk detail buku dengan status "Dalam proses review" dan "Pengajuan Ditolak" pada mode user.
                 else{
                   $olddate = $row['upload_date'];
                   $bulan = array (1 =>   	'Januari',
