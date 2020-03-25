@@ -229,13 +229,13 @@
                           <div class="card-body">
                           <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
                             <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Penulis : '.$row[3].'</p>';
-                            if($row[5] > 0) {
-                              echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row[5].'</strong></h4>';
-                            } else {
-                              echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
-                            }
+                            // if($row[5] > 0) {
+                            //   echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row[5].'</strong></h4>';
+                            // } else {
+                            //   echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
+                            // }
                             echo '
-                            <a class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-shopping-cart"> </i>&nbsp; Beli</a>
+                            <a class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>
                             ';
                             echo '
                         </div>
