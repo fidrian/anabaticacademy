@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: remotemysql.com
--- Generation Time: Mar 25, 2020 at 08:54 AM
+-- Generation Time: Mar 25, 2020 at 03:34 PM
 -- Server version: 8.0.13-4
 -- PHP Version: 7.0.33-0ubuntu0.16.04.3
 
@@ -184,7 +184,8 @@ INSERT INTO `unggah` (`no`, `title`, `author`, `category`, `description`, `file`
 (8, 'Madhur Jaffrey\'s Quick & Easy Indian Cooking', 'Madhur Jaffrey', 'Drama', 'With more than ten reprints, it\'s clear cookbook author Madhur Jaffrey wins the popular vote for delicious Indian recipes that can be prepared in 30 minutes or less. Now with a beautiful new design and all-new photographs, Madhur Jaffrey\'s Quick & Easy Indian Cooking is ready to wow another generation of home cooks. Written by the world\'s foremost authority on Indian cooking, this terrific volume boasts a tantalizing array of appetizers, entres, beverages, and desserts for every occasion. From Silken Chicken and Pork Vindaloo to Fresh Red Chutney with Almonds and Sweet, Pale Orange, Mango Lassi, Quick & Easy Indian Cooking makes this exotic cuisine accessible and enjoyableas perfect for entertaining as it is for everyday cooking.\r\n\r\nThis title was selected in the New York Times list of \"most-stained\" favorite cookbooks from a miscellany of chefs, authors, shop and restaurant owners, stylists and bloggers.', 'Madhur Jaffrey Indian Cooking.pdf', '2020-02-20', 'Pengajuan Diterima', 'faraday'),
 (9, 'The Book of Veganish: The Ultimate Guide to Easing into a Plant-Based, Cruelty-Free', 'Kathy Freston', 'Sosial', 'The Book of Veganish contains everything curious young adults need to help them navigate through the transition to a vegan lifestyle. The 70 simple recipes are perfect for those with tight budgets and rudimentary cooking tools (and skills). Filled with insights on the benefits of adopting a plant-based diet and how to best deal with parents and the rest of the nonvegan world, The Book of Veganish will allow existing and aspiring vegans to feel confident about their new lifestyle choices.', 'The Book of Veganish.pdf', '2020-02-29', 'Pengajuan Diterima', 'newton'),
 (10, 'The Theory of Everything: The Origin and Fate of the Universe', 'Stephen W Hawking', 'Literatur', 'Based on a series of lectures given at Cambridge University, Professor Hawking\'s work introduced \"the history of ideas about the universe\" as well as today\'s most important scientific theories about time, space, and the cosmos in a clear, easy-to-understand way.', 'The Theory of Everything.pdf', '2020-03-03', 'Pengajuan Diterima', 'euler'),
-(11, 'Buku Fadil', 'Julian Septiana Aji', 'Sastra', 'Materi tentang diorama kehidupan, kadang diatas kadang bisa dibawah', 'Buku Fadil.pdf', '2020-03-22', 'Pengajuan Diterima', 'fidrian');
+(11, 'Buku Fadil', 'Julian Septiana Aji', 'Sastra', 'Materi tentang diorama kehidupan, kadang diatas kadang bisa dibawah', 'Buku Fadil.pdf', '2020-03-22', 'Pengajuan Diterima', 'fidrian'),
+(12, 'Pandemi Corona', 'Andrea Karya Hanks', 'Literatur', 'Pandemi covid 19 sungguh berbahaya', 'sentimen.pdf', '2020-03-25', 'Dalam Proses Review', 'kartiko');
 
 -- --------------------------------------------------------
 
@@ -289,7 +290,7 @@ ALTER TABLE `submission`
 -- AUTO_INCREMENT for table `unggah`
 --
 ALTER TABLE `unggah`
-  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `user`
 --
