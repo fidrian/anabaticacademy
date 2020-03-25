@@ -192,16 +192,16 @@
 			if ($akhir > $row[0]) {
 				if ($row[0] == 0) {
 					echo '
-					<h4>Tidak ada materi tersedia</h4>
+					<h4>Tidak ada e-book tersedia</h4>
 					';
 				}else {
 					echo '
-					<h4>Menampilkan '.$awal.'-'.$row[0].' dari '.$row[0].' materi</h4>
+					<h4>Menampilkan '.$awal.'-'.$row[0].' dari '.$row[0].' e-book</h4>
 					';
 				}
 			}else{
 				echo '
-				<h4>Menampilkan '.$awal.'-'.$akhir.' dari '.$row[0].' materi</h4>
+				<h4>Menampilkan '.$awal.'-'.$akhir.' dari '.$row[0].' e-book</h4>
 				';
 			}
 		}
@@ -228,13 +228,13 @@
                           <div class="card-body">
                           <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
                             <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[3].'</p>';
-                            if($row[5] > 0) {
-                              echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row[5].'</strong></h4>';
-                            } else {
-                              echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
-                            }
+                            // if($row[5] > 0) {
+                            //   echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row[5].'</strong></h4>';
+                            // } else {
+                            //   echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
+                            // }
                             echo '
-                            <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-shopping-cart"> </i>&nbsp; Beli</a>
+                            <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>
                             ';
                             echo '
                         </div>
