@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: remotemysql.com
--- Generation Time: Mar 23, 2020 at 04:47 AM
+-- Generation Time: Mar 25, 2020 at 01:30 AM
 -- Server version: 8.0.13-4
 -- PHP Version: 7.0.33-0ubuntu0.16.04.3
 
@@ -211,7 +211,8 @@ INSERT INTO `user` (`user_id`, `username`, `password`, `role`, `email`, `nama_le
 (3, 'newton', 'isaac', 'user', NULL, NULL),
 (4, 'euler', 'leonhard', 'user', NULL, NULL),
 (5, 'faraday', 'michael', 'user', NULL, NULL),
-(6, 'fidrian', 'qwerty123', 'user', 'fidrian123@gmail.com', 'M. Fadil Fidrian');
+(6, 'fidrian', 'qwerty123', 'user', 'fidrian123@gmail.com', 'M. Fadil Fidrian'),
+(7, 'julian', 'julian', 'user', 'julian@gmail.com', 'julian');
 
 --
 -- Indexes for dumped tables
@@ -291,7 +292,7 @@ ALTER TABLE `unggah`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- Constraints for dumped tables
 --
