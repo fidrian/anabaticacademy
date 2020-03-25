@@ -143,15 +143,7 @@
                   <tr>
                   <td>Tanggal Terbit</td>
                   <td>'.$row['publish_date'].'</td>
-                </tr>
-                <tr>
-                  <td>ISBN</td>
-                  <td>'.$row['isbn'].'</td>
-                </tr>
-                <tr>
-                  <td>SKU</td>
-                  <td>'.$row['sku'].'</td>
-                </tr>
+                </tr>                
                   ';
                 }
             ?>
@@ -184,15 +176,15 @@
           <li>.mobi</li>
         </ul>
         ';
-        if($row['quantity'] > 0) {
-          echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row['quantity'].'</strong></h4>';
-        } else {
-          echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
-        }
+        // if($row['quantity'] > 0) {
+        //   echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row['quantity'].'</strong></h4>';
+        // } else {
+        //   echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
+        // }
       }
       echo '
-      <a href="cart.php?id='.$row['book_id'].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-shopping-cart"></i>&nbsp; Beli</a>
-      <a href="services/buy.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-plus"> </i>&nbsp; Tambah ke Keranjang</a>
+      <a href="cart.php?id='.$row['book_id'].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
+      <a href="services/buy.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>
       ';
 		?>
 
