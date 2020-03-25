@@ -584,8 +584,9 @@ footer .glyphicon {
 /* Begin Subscribe */
 
 .subscribe {
-    margin-top: 100px;
-    background-color: #1976D2;
+    /* margin-top: 100px; */
+    /* background-color: #1976D2; */
+    background-color: #D72323;
 }
 
 .subscribe-box {
@@ -1383,7 +1384,7 @@ h3.heading {
 }
 
 .services {
-    background: #f8f9fa;
+    background: #e9e9e9;
 }
 
 @media(max-width:736px) {
