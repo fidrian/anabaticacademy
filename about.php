@@ -27,13 +27,13 @@ function connectDB() {
         <h1>Tentang Kami</h1>
       </div>
       <center>
-        <a href="landing.php"><img class="img-responsive" src="images/logo-about.png" alt=""></a>
+        <a href="landing.php"><img class="img-responsive" src="images/anabatic-academy.png" alt=""></a>
       </center>
       <div class="col-md-12 text-justify">
 
         <p>
-          <strong>EbookHub.id</strong> adalah perusahaan self publishing/ penerbit <i>indie.</i> Berawal dari interaksi online dengan para pecinta dunia kepenulisan, kami berinisiatif membangun fasilitas yang memudahkan para penulis untuk mengorbitkan karya mereka. EbookHub.id  merupakan tempat yang tepat untuk mempertemukan penulis dengan pembaca guna menyediakan apa yang mereka butuhkan, yaitu sebagai penulis yang membutuhkan wadah menerbitkan buku dengan cara yang lebih mudah dan ekonomis, sedangkan pembaca membutuhkan buku-buku berkualitas dan mudah terjangkau. Di sinilah kami berperan untuk menjembatani kebutuhan penulis dan pembaca.
-          <strong>EbookHub.id</strong> memberi kesempatan bagi siapapun juga tanpa kecuali untuk menerbitkan karya mereka. Kami menerima segala jenis naskah baik fiksi maupun non-fiksi dalam berbagai genre (asal tidak berbau pornografi, SARA dan mengandung kontroversi). Pada dasarnya, kami memposisikan diri sebagai sahabat para penulis. Semoga komitmen ini bisa kami pertahankan untuk terus berkontribusi bagi perkembangan dunia literasi Indonesia pada khususnya dan dunia pada umumnya.
+          <strong>Anabatic Learning Academy</strong> adalah perusahaan self publishing/ penerbit <i>indie.</i> Berawal dari interaksi online dengan para pecinta dunia kepenulisan, kami berinisiatif membangun fasilitas yang memudahkan para penulis untuk mengorbitkan karya mereka. Anabatic Learning Academy  merupakan tempat yang tepat untuk mempertemukan penulis dengan pembaca guna menyediakan apa yang mereka butuhkan, yaitu sebagai penulis yang membutuhkan wadah menerbitkan buku dengan cara yang lebih mudah dan ekonomis, sedangkan pembaca membutuhkan buku-buku berkualitas dan mudah terjangkau. Di sinilah kami berperan untuk menjembatani kebutuhan penulis dan pembaca.
+          <strong>Anabatic Learning Academy</strong> memberi kesempatan bagi siapapun juga tanpa kecuali untuk menerbitkan karya mereka. Kami menerima segala jenis naskah baik fiksi maupun non-fiksi dalam berbagai genre (asal tidak berbau pornografi, SARA dan mengandung kontroversi). Pada dasarnya, kami memposisikan diri sebagai sahabat para penulis. Semoga komitmen ini bisa kami pertahankan untuk terus berkontribusi bagi perkembangan dunia literasi Indonesia pada khususnya dan dunia pada umumnya.
           Tunjukkan eksistensi karya Anda pada dunia. <strong>Read. Write. Inspire!</strong>
 
 
@@ -42,13 +42,13 @@ function connectDB() {
 
       <div class="col-md-12 text-center visi-ebookhub">
         <ol>
-          <h2 id="greetings-1">Visi Ebookhub</h2>
+          <h2 id="greetings-1">Visi Anabatic Academy</h2>
           <p class="visi-text">“Meningkatkan Pengetahuan dan Intelektual Bangsa Indonesia melalui Pendidikan”</p>
         </ol>
       </div>
         <ol>
           <div class="text-center">
-            <h2 id="greetings-1">Misi Ebookhub</h2>
+            <h2 id="greetings-1">Misi Anabatic Academy</h2>
           </div>
           <div class="col-md-6 col-md-offset-3 text-justify">
             <li>Mengembangkan dan menyebarluaskan ilmu pengetahuan, serta mengupayakan penerapannya untuk meningkatkan martabat kehidupan masyarakat dan kebudayaan nasional.</li>

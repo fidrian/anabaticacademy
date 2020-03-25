@@ -28,7 +28,7 @@ function connectDB() {
       </div>
 
       <div class="col-md-12 text-justify">
-        <h4>Q: Kami komunitas pembaca/penulis, dan kami ingin bekerjasama dengan EbookHub.id. Bagaimana caranya?</h4>
+        <h4>Q: Kami komunitas pembaca/penulis, dan kami ingin bekerjasama dengan Anabatic Learning Academy. Bagaimana caranya?</h4>
         <p>A: Kami ingin sekali bekerjasama denganmu! Sebaiknya, kamu langsung berbicara pada Tim kami. Kamu bisa menghubunginya melalui surel ke cs@EbookHub.id , atau kirim pesan melalui Facebook dan Instagram.</p>
       </div>
 

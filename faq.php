@@ -30,7 +30,7 @@ function connectDB() {
       <div class="col-md-12 text-justify">
         <div class="faq-group">
           <h4>Q: Apa itu Ebook?</h4>
-          <p>A: Ebook adalah buku dalam bentuk digital yang dapat dibaca melalui perangkat handphone / tablet, maka kamu bisa membaca buku kapan saja dan di mana saja. Untuk     dapat mengakses ebook yang kamu beli di EbookHub.id, ikuti step berikut: <br>
+          <p>A: Ebook adalah buku dalam bentuk digital yang dapat dibaca melalui perangkat handphone / tablet, maka kamu bisa membaca buku kapan saja dan di mana saja. Untuk     dapat mengakses ebook yang kamu beli di Anabatic Learning Academy, ikuti step berikut: <br>
           1. Pastikan kamu telah menyelesaikan pembayaran pesanan <br>
           2. Buka halaman daftar pesanan yang selesai yang akan menampilkan daftar ebook yang telah dibeli dan dapat diunduh. <br>
           3. Unduh Ebook yang telah dipilih. <br>
@@ -47,14 +47,14 @@ function connectDB() {
         </div>
 
         <div class="faq-group">
-          <h4>Q: Bagaimana cara menerbitkan buku di EbookHub.id?</h4>
+          <h4>Q: Bagaimana cara menerbitkan buku di Anabatic Learning Academy?</h4>
           <p>
             A: Tahapan untuk menerbitkan buku yakni dengan step berikut:<br>
 
             1. Pertama, dapat melengkapi formulir pendaftaran sesuai dengan data diri.<br>
             2. Setelah itu dapat mengunduh format naskah buku yang dapat diklik di sini. <br>
             3. Pastikan buku yang akan diterbitkan melalui layanan self publishing sudah sesuai dengan format yang ditentukan.<br>
-            4. Naskah buku kemudian diupload ke EbookHub.id
+            4. Naskah buku kemudian diupload ke Anabatic Learning Academy
           </p>
         </div>
 
@@ -68,7 +68,7 @@ function connectDB() {
         <div class="faq-group">
           <h4>Q: Naskah dikirim ke mana?</h4>
           <p>
-            A: Naskah dikirim melalui EbookHub.id
+            A: Naskah dikirim melalui Anabatic Learning Academy
           </p>
         </div>
 
@@ -76,14 +76,14 @@ function connectDB() {
           <h4>Q: Bagaimana Cara meng-upload naskah?</h4>
           <p>
             A: Bisa langsung buka tautan berikut:
-            <a href="#">www.EbookHub.id(LINK UPLOAD)</a>
+            <a href="#">www.anabaticacademy.com(LINK UPLOAD)</a>
           </p>
         </div>
 
         <div class="faq-group">
           <h4>Q: Berapa lama naskah publish di web setelah penulis mengirimkan naskah?</h4>
           <p>
-            A: Launching buku akan publish di web dalam waktu 25 HARI KERJA, jika dikirim melalui web, dan 30 HARI KERJA jika dikirim melalui email. Naskah yang lebih dari 200 halaman, maka akan ada tambahan waktu pengerjaan selama 7 hari. Naskah Ekspress dan Mini Ekspress akan publish di web dalam waktu 7 HARI KERJA. Naskah yang dikirim di luar jam kerja EbookHub.id  dihitung masuk di hari kerja berikutnya.
+            A: Launching buku akan publish di web dalam waktu 25 HARI KERJA, jika dikirim melalui web, dan 30 HARI KERJA jika dikirim melalui email. Naskah yang lebih dari 200 halaman, maka akan ada tambahan waktu pengerjaan selama 7 hari. Naskah Ekspress dan Mini Ekspress akan publish di web dalam waktu 7 HARI KERJA. Naskah yang dikirim di luar jam kerja Anabatic Learning Academy  dihitung masuk di hari kerja berikutnya.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ function connectDB() {
         <div class="faq-group">
           <h4>Q: Bagaimana sistem penjualan buku ?</h4>
           <p>
-            A: Buku-buku EbookHub.id dijual secara Online melalui web EbookHub.id Selain dijual online penulis bisa ikut serta di program Distribusi Nasional  dan buku berpotensi dipasarkan lewat toko buku offline. Beberapa judul sudah bisa masuk dalam jumlah yang terbatas. Semua hasil penjualan tetap dilaporkan, meskipun tidak secara langsung karena memakai sistem konsinyasi atau titip jual.
+            A: Buku-buku Anabatic Learning Academy dijual secara Online melalui web Anabatic Learning Academy Selain dijual online penulis bisa ikut serta di program Distribusi Nasional  dan buku berpotensi dipasarkan lewat toko buku offline. Beberapa judul sudah bisa masuk dalam jumlah yang terbatas. Semua hasil penjualan tetap dilaporkan, meskipun tidak secara langsung karena memakai sistem konsinyasi atau titip jual.
           </p>
         </div>
 
@@ -116,16 +116,16 @@ function connectDB() {
         </div>
 
         <div class="faq-group">
-          <h4>Q: Kapan kontrak kerja sama antara penulis dan EbookHub.id  berakhir? </h4>
+          <h4>Q: Kapan kontrak kerja sama antara penulis dan Anabatic Learning Academy  berakhir? </h4>
           <p>
-            A: Ketika penulis mengirimkan surat pernyataan pemutusan kerja sama yang di tanda tangani oleh penulis di atas materai kepada pihak EbookHub.id.
+            A: Ketika penulis mengirimkan surat pernyataan pemutusan kerja sama yang di tanda tangani oleh penulis di atas materai kepada pihak Anabatic Learning Academy.
           </p>
         </div>
 
         <div class="faq-group">
-          <h4>Q: Apakah penulis boleh mempromosikan bukunya di  website/ blog/ twitter/ facebook selain akun resmi EbookHub.id ?</h4>
+          <h4>Q: Apakah penulis boleh mempromosikan bukunya di  website/ blog/ twitter/ facebook selain akun resmi Anabatic Learning Academy ?</h4>
           <p>
-            A: Boleh. Penulis bisa share semua konten yang tersedia di website EbookHub.id  termasuk produk buku dan informasi lainnya dengan cara klik opsi "share" di setiap pages.
+            A: Boleh. Penulis bisa share semua konten yang tersedia di website Anabatic Learning Academy  termasuk produk buku dan informasi lainnya dengan cara klik opsi "share" di setiap pages.
           </p>
         </div>
 
@@ -144,9 +144,9 @@ function connectDB() {
         </div>
 
         <div class="faq-group">
-          <h4>Q: Kapan Jam kerja EbookHub.id ?</h4>
+          <h4>Q: Kapan Jam kerja Anabatic Learning Academy ?</h4>
           <p>
-            A:  Jam Kerja EbookHub.id: <br>
+            A:  Jam Kerja Anabatic Learning Academy: <br>
             Senin - Jumat: 08.00 WIB - 16.00 WIB <br>
             Sabtu: 08.00 - 12.00 WIB <br>
             Libur di hari Minggu dan hari libur nasional
