@@ -133,7 +133,7 @@ if(!isset($_SESSION['namauser'])) {
             }
           ?>
 
-          <a href="edit-profil.php" type="button" name="edit" class="btn btn-primary btn-block btn-ebookhub btn-register">Edit Profil</a>
+          <a href="edit-profil.php" type="button" name="edit" class="btn btn-primary btn-block btn-ebookhub btn-register p-3">Edit Profil</a>
         </form>
 
 
