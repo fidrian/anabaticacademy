@@ -16,12 +16,16 @@
         <li class="li-footer"><a href="syarat-dan-ketentuan.php">Syarat dan Ketentuan</a></li>
           <li class="li-footer"><a href="kebijakan-dan-privasi.php">Kebijakan dan Privasi</a></li>
           <li class="li-footer"><a href="faq.php">Bantuan dan FAQ</a></li>
-          <li class="li-footer"><a href="kerja-sama.php">Kerja Sama</a></li>
+          <!-- <li class="li-footer"><a href="kerja-sama.php">Kerja Sama</a></li> -->
         </ul>
       </div>
       <div class="col-md-4 col-sm-12">
-        <h2>Pembayaran</h2>
-        <img src="https://i.ibb.co/wM8WHBV/payments.png" alt="payments" class="payments">
+        <h2>Ikuti Kami</h2>
+        <ul class="list-inline">
+          <li><a href="https://www.instagram.com/anabaticid/?hl=id"><i class="fa fa-instagram fa-footer"></i></a></li>
+          <li><a href="https://twitter.com/anabaticid?lang=id"><i class="fa fa-twitter fa-footer"></i></a></li>
+          <li><a href="https://www.facebook.com/AnabaticID/"><i class="fa fa-facebook fa-footer"></i></a></li>
+        </ul>
       </div>
     </div>
 <!-- 

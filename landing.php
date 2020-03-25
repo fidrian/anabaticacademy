@@ -218,15 +218,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 greetings">
-        <h1 id="greetings-1">Hi, kami Ebookhub!</h1>
-        <h3 id="greetings-2">Platform untuk menerbitkan e-book, membaca e-book, dan membeli e-book yang tepat untukmu!</h3>
-        <h3 id="greetings-3">Ebookhub ingin membantu meningkatkan minat baca di Indonesia, ayo mulai sekarang!</h3>
+        <h1 id="greetings-1">Hi, Kami Anabatic Academy!</h1>
+        <h3 id="greetings-2">Media untuk belajar ratusan materi untuk membantu pekerjaanmu sehari-hari! Gratis!</h3>
+        <h3 id="greetings-3">Kami hadir untuk memastikan pengetahuan dan skill kamu akan terus berkembang</h3>
 
         <div class="col-md-6">
         <button type="button" class="btn btn-primary btn-block btn-ebookhub btn-bacaupload" onclick="window.location='shop.php?offset=0'">Mulai Baca</button>
         </div>
         <div class="col-md-6">
-        <button type="button" class="btn btn-primary btn-block btn-ebookhub btn-bacaupload" onclick="window.location='upload.php'">Mulai Terbitkan</button>
+        <button type="button" class="btn btn-primary btn-block btn-ebookhub btn-bacaupload" onclick="window.location='upload.php'">Mulai Publikasi</button>
         </div>
       </div>
 
@@ -308,29 +308,27 @@
 </div> -->
 <!-- End partner -->
 
-
-
-    <!-- services-->
+<!-- services-->
     <section class="services pt-5" id="services">
         <div class="container py-lg-5">
             <p class="paragraph">About</p>
             <h3 class="heading mb-sm-5 mb-4">Anabatic Learning Academy</h3>
-            <div class="row">
+            <div class="row text-center pt-4">
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div class="panel panel-default">
-                        <div class="panel-thumbnail" style="height:420px">
+                        <div class="panel-thumbnail" style="height:370px">
                             <img src="images/s1.png" alt="" class="img-fluid" />
-                            <h3>01</h3>
+                            <!-- <h3>01</h3> -->
                             <h4 class="mt-3">Learn Anywhere, Anytime!</h4>
-                            <p class="mt-3">helps you connect to thousands of classes and can be accessed anytime and anywhere, and absolutely Free!</p>
+                            <p class="mt-3">Helps you connect to thousands of classes and can be accessed anytime and anywhere, and absolutely Free!</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div class="panel panel-default" >
-                        <div class="panel-thumbnail" style="height:420px">
+                        <div class="panel-thumbnail" style="height:370px">
                             <img src="images/s2.png" alt="" class="img-fluid" />
-                            <h3>02</h3>
+                            <!-- <h3>02</h3> -->
                             <h4 class="mt-3">Professional Practitioner</h4>
                             <p class="mt-3">Meet the practitioner who are experts in their respective fields!</p>
                         </div>
@@ -338,9 +336,9 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div class="panel panel-default">
-                        <div class="panel-thumbnail" style="height:420px">
+                        <div class="panel-thumbnail" style="height:370px">
                             <img src="images/s3.png" alt="" class="img-fluid" />
-                            <h3>03</h3>
+                            <!-- <h3>03</h3> -->
                             <h4 class="mt-3">Course from Other Division? Easy!</h4>
                             <p class="mt-3">Finding online classes from other division has never been easier like this before. Come on, learn new knowledge here!</p>
                         </div>
@@ -348,9 +346,9 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-5">
                     <div class="panel panel-default">
-                        <div class="panel-thumbnail" style="height:420px">
+                        <div class="panel-thumbnail" style="height:370px">
                             <img src="images/s4.png" alt="" class="img-fluid" />
-                            <h3>04</h3>
+                            <!-- <h3>04</h3> -->
                             <h4 class="mt-3">Easy to Use</h4>
                             <p class="mt-3">You can access from various browsers and platforms. just Click and BOOOM</p>
                         </div>
@@ -359,17 +357,17 @@
             </div>
         </div>
     </section>
-    <!-- //services -->
-
+		<!-- services -->
+		
 <!-- testimoni -->
 <section class="client py-5" id="testimonials">
   <div class="container py-lg-5">
 		<p class="paragraph">what users say</p>
 		<h3 class="heading mb-sm-5 mb-4">Testimony</h3>
-		  <div class="row client-slider-slide">
-			<div class="col-lg-6 col-md-6 w3layouts-txt-says mb-md-0 mb-5">
+		  <section class="row client-slider-slide">
+			<div class="col-lg-6 col-md-6  mb-md-0 mb-5">
 			  <div class="clients-info-grid">
-				<p>Dengan menggunakan Anabatic Learning academy banyak manfaat yang kami dapatkan, salah satunya sangat membantu dalam meningkatkan skill dan kemampuan untuk bisa selalu bersaing.
+				<p style="font-size:12pt">"Dengan menggunakan Anabatic Learning academy banyak manfaat yang kami dapatkan, salah satunya sangat membantu dalam meningkatkan skill dan kemampuan untuk bisa selalu bersaing."
 				</p>
 				<div class="row">
 					<div class="col-lg-2 col-3 pr-0 img-position mt-3">
@@ -384,7 +382,7 @@
 			</div>
 			<div class="col-lg-6 col-md-6 w3layouts-txt-says">
 			  <div class="clients-info-grid">
-				<p>Mudah digunakan, Harapannya dengan adanya Anabatic Learning Academy memudahkan dalam sharing knowledges, dan akhirnya dapat menyamaratakan kemampuan setiap individu di perusahaan.  </p>
+				<p style="font-size:12pt">"Mudah digunakan, Harapannya dengan adanya Anabatic Learning Academy memudahkan dalam sharing knowledges, dan akhirnya dapat menyamaratakan kemampuan setiap individu di perusahaan."  </p>
 				<div class="row">
 					<div class="col-lg-2 col-3 pr-0 img-position mt-3">
 					  <img src="images/t1.png" alt="" class="img-fluid">
@@ -400,25 +398,25 @@
 	</div>
 </section>
 
-
-
 <!-- Begin Subscribe -->
-<div class="subscribe">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12 subscribe-box text-center">
-        <h2>Jadilah yang pertama tahu berita dan promosi menarik dari kami! (Gratis)</h2>
-        <div class="input-group input-subscribe">
-          <input type="email" class="form-control" placeholder="Masukkan alamat e-mail...">
-          <span class="input-group-btn">
-            <button class="btn btn-danger" type="submit">Berlangganan</button>
-          </span>
-        </div>
-	    </div>
-    </div>
-  </div>
-</div>
-<!-- End Subscribe -->
+
+<!-- testimoni -->
+<section class="subscribe py-5" id="">
+  <div class="p-5 py-lg-5">
+		<div class="row">
+  	    <div class="col-sm-12 subscribe-box text-center">
+  	      <h2>Jadilah yang pertama tahu berita dan promosi menarik dari kami! (Gratis)</h2>
+  	      <div class="input-group input-subscribe">
+  	        <input type="email" class="form-control" placeholder="Masukkan alamat e-mail...">
+  	        <span class="input-group-btn">
+  	          <button class="btn btn-danger" type="submit">Berlangganan</button>
+  	        </span>
+  	      </div>
+		    </div>
+		</div>
+	</div>
+</section>
+
 
 <?php
   require_once("templates/footer.php");
