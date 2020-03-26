@@ -143,7 +143,11 @@
                   <tr>
                   <td>Tanggal Terbit</td>
                   <td>'.$row['publish_date'].'</td>
-                </tr>                
+                  </tr>
+                  <tr>
+                  <td>Kategori</td>
+                  <td>'.$row['category'].'</td>
+                  </tr>                
                   ';
                 }
             ?>
@@ -184,6 +188,7 @@
       }
       echo '
       <a href="cart.php?id='.$row['book_id'].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
+      &nbsp;&nbsp;
       <a href="services/buy.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>
       ';
 		?>
@@ -200,7 +205,7 @@
       $terkait = mysqli_num_rows($daftarbuku);
       if ($terkait > 0) {
         echo '
-          <h2>Buku-buku Terkait</h2>
+          <h2>Materi Terkait</h2>
         ';
       }
     while ($row = mysqli_fetch_row($daftarbuku)) {
@@ -231,7 +236,7 @@
 
     <div class="row section-mini-margin">
       <div class="col-md-12">
-        <h2>Buku-buku Terpopuler</h2>
+        <h2>Materi Populer Lainnya</h2>
 
         <?php
               $arraybook = selectAllBooks();

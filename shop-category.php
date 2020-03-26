@@ -26,9 +26,9 @@
 			$category = $_GET['id'];
 			if (isset($_GET['offset'])) {
 				$no = $_GET['offset'];
-				$sql = "SELECT book_id, img_path, title, author, publisher, quantity FROM $table WHERE category = '$category' LIMIT 6 OFFSET $no";
+				$sql = "SELECT book_id, img_path, title, author, publisher, quantity, category FROM $table WHERE category = '$category' LIMIT 6 OFFSET $no";
 			}else{
-				$sql = "SELECT book_id, img_path, title, author, publisher, quantity FROM $table WHERE category = '$category' LIMIT 6 OFFSET 0";
+				$sql = "SELECT book_id, img_path, title, author, publisher, quantity, category FROM $table WHERE category = '$category' LIMIT 6 OFFSET 0";
 			}
 		}
 
@@ -202,14 +202,15 @@
                           <div class="card-body">
                           <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
                             <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[3].'</p>
-                            <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[4].'</p>';
+							<p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[6].'</p>
+							';
                             // if($row[5] > 0) {
                             //   echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row[5].'</strong></h4>';
                             // } else {
                             //   echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
                             // }
                             echo '
-                            <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>
+                            <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>
                             ';
                             echo '
                         </div>
