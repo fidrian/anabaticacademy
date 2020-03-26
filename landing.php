@@ -219,8 +219,8 @@
     <div class="row">
       <div class="col-md-6 greetings">
         <h1 id="greetings-1">Hi, Kami Anabatic Academy!</h1>
-        <h3 id="greetings-2">Media untuk belajar ratusan materi untuk membantu pekerjaanmu sehari-hari! Gratis!</h3>
-        <h3 id="greetings-3">Kami hadir untuk memastikan pengetahuan dan skill kamu akan terus berkembang</h3>
+        <h3 id="greetings-2">Media belajar ratusan materi untuk membantu pekerjaanmu sehari-hari! Gratis!</h3>
+        <h3 id="greetings-3">Kami hadir untuk memastikan pengetahuan dan skill kamu akan terus berkembang!</h3>
 
         <div class="col-md-6">
         <button type="button" class="btn btn-primary btn-block btn-ebookhub btn-bacaupload" onclick="window.location='shop.php?offset=0'">Mulai Baca</button>
