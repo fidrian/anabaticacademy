@@ -229,7 +229,7 @@
                           <div class="card-body">
                           <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
 							<p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Penulis : '.$row[3].'</p>
-							<p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Penulis : '.$row[6].'</p>
+							<p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Kategori : '.$row[6].'</p>
 							';
                             // if($row[5] > 0) {
                             //   echo '<h4 class="card-title ebook-price"><strong>Rp. '.$row[5].'</strong></h4>';
