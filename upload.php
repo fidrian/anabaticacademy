@@ -60,30 +60,7 @@
     					<option>Telecommunication</option>
     					<option>Temenos T24</option>
     					<option>Fabel</option>
-    					<option>Windows Server 2012</option>        
-                    <!-- <option>Umum</option>
-										<option>Filsafat</option>
-										<option>Psikologi</option>
-										<option>Agama</option>
-										<option>Sejarah</option>
-										<option>Sosial</option>
-										<option>Bahasa</option>
-										<option>Sains</option>
-										<option>Geografi</option>
-										<option>Teknologi</option>
-										<option>Seni</option>
-										<option>Literatur</option>
-										<option>Sastra</option>
-										<option>Biografi</option>
-										<option>Matematika</option>
-										<option>Novel</option>
-										<option>Cerpen</option>
-										<option>Puisi</option>
-										<option>Drama</option>
-										<option>Komik</option>
-										<option>Dongeng</option>
-										<option>Fabel</option>
-										<option>Mitos</option> -->
+    					<option>Windows Server 2012</option>
             </select>
           </div>
 
