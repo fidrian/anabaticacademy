@@ -223,8 +223,8 @@
                   echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
                 }
                 echo '
-                <a href="cart.php?id='.$row[0].'"class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-shopping-cart"></i>&nbsp; Beli</a>
-              </div>
+                <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
+                </div>
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@
                           echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
                         }
                         echo '
-                        <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-shopping-cart"></i>&nbsp; Beli</a>
+                        <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
                       </div>
                     </div>
                   </div>
