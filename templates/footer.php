@@ -47,8 +47,8 @@
 <div class="copyright">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center copyright-text">
-        <h2>&copy;&nbsp;2020 <strong>Anabatic Learning Academy</strong></h2>
+      <div class="col-sm-12 text-center  text-white p-2">
+        <p>&copy;&nbsp;2020 <strong>Anabatic Learning Academy</strong></p>
       </div>
     </div>
   </div>
