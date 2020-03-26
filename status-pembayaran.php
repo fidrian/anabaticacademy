@@ -71,6 +71,7 @@
                 if (isset($_GET['id'])) {
                   $no = $_GET['id'];
                   $query = mysqli_query($conn, "INSERT INTO purchase (book_id, user_id, date) VALUES ('$no', '$user_id', '$datePaid')");
+                  var_dump($query); die();
                 }else{
                   $arraybook = selectBooks();
                   $gabungan = "INSERT INTO purchase (book_id, user_id, date) VALUES ";
