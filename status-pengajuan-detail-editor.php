@@ -177,7 +177,30 @@ function daftarBuku($table) {
                 <label for="kategori"></label>
                 <select class="form-control form-register form-group-kategori" id="insert-kategori" name="kategori" required>
                         <option>-Pilih Kategori-</option>
-                        <option>Umum</option>
+                        <option>Android Development</option>
+    										<option>Banking Operation</option>
+    										<option>Banking Regulation</option>
+    										<option>Basic Marketing</option>
+    										<option>Business English</option>
+    										<option>CISCO</option>
+    										<option>Data Library T24</option>
+    										<option>Java</option>
+    										<option>Health & Workstyle</option>
+    										<option>International Banking Learning</option>
+    										<option>Motivation and Inspiration</option>
+    										<option>Office 365</option>
+    										<option>Oracle Database</option>
+    										<option>Pocket Bank</option>
+    										<option>Project Management</option>
+    										<option>RTGS</option>
+    										<option>SAP</option>
+    										<option>SQL SERVER</option>
+    										<option>SSIS</option>
+    										<option>Telecommunication</option>
+    										<option>Temenos T24</option>
+    										<option>Fabel</option>
+    										<option>Windows Server 2012</option>
+                        <!-- <option>Umum</option>
     										<option>Filsafat</option>
     										<option>Psikologi</option>
     										<option>Agama</option>
@@ -199,7 +222,7 @@ function daftarBuku($table) {
     										<option>Komik</option>
     										<option>Dongeng</option>
     										<option>Fabel</option>
-    										<option>Mitos</option>
+    										<option>Mitos</option> -->
                 </select>
               </div>
 

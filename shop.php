@@ -192,16 +192,16 @@
 			if ($akhir > $row[0]) {
 				if ($row[0] == 0) {
 					echo '
-					<h4>Tidak ada e-book tersedia</h4>
+					<h4>Tidak ada materi tersedia</h4>
 					';
 				}else {
 					echo '
-					<h4>Menampilkan '.$awal.'-'.$row[0].' dari '.$row[0].' e-book</h4>
+					<h4>Menampilkan '.$awal.'-'.$row[0].' dari '.$row[0].' materi</h4>
 					';
 				}
 			}else{
 				echo '
-				<h4>Menampilkan '.$awal.'-'.$akhir.' dari '.$row[0].' e-book</h4>
+				<h4>Menampilkan '.$awal.'-'.$akhir.' dari '.$row[0].' materi</h4>
 				';
 			}
 		}
