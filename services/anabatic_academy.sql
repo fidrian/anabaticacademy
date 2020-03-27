@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: remotemysql.com
--- Generation Time: Mar 26, 2020 at 06:01 AM
+-- Generation Time: Mar 27, 2020 at 03:33 PM
 -- Server version: 8.0.13-4
 -- PHP Version: 7.0.33-0ubuntu0.16.04.3
 
@@ -60,7 +60,8 @@ INSERT INTO `book` (`book_id`, `img_path`, `title`, `author`, `publisher`, `desc
 (10, 'https://images-na.ssl-images-amazon.com/images/I/51oHUvYzbsL._SX327_BO1,204,203,200_.jpg', 'The Theory of Everything: The Origin and Fate of the Universe', 'Stephen W Hawking', 'Phoenix Books', 'Based on a series of lectures given at Cambridge University, Professor Hawking\'s work introduced \"the history of ideas about the universe\" as well as today\'s most important scientific theories about time, space, and the cosmos in a clear, easy-to-understand way.', 49900, 'SAP', '2020-03-06', 10, 'ISBN 847648486-0', '245743'),
 (11, 'file_buku/Buku Fadil.jpg', 'Buku Fadil', 'Julian Septiana Aji', '', 'Materi diorama kehidupan, terkadang diatas terkadang dibawah', 150000, 'Business English', '2020-03-22', 11, '', ''),
 (12, 'file_buku/business-pic.jpg', 'Pandemi Corona', 'Andrea Karya Hanks', '', 'Pandemi covid-19', 200000, 'SSIS', '2020-03-26', 12, '', ''),
-(13, 'file_buku/java-pic.jpg', 'Belajar java', 'M. Arief Ramadhan', '', 'Belajar java untuk level pemula', 100000, 'Java', '2020-03-26', 13, '', '');
+(13, 'file_buku/java-pic.jpg', 'Belajar java', 'M. Arief Ramadhan', '', 'Belajar java untuk level pemula', 100000, 'Java', '2020-03-26', 13, '', ''),
+(14, 'file_buku/Picture2.png', 'Filip Test PDF', 'Filip', '', 'Ini Test Filip', 99000, 'Banking Operation', '2020-03-26', 14, '', '');
 
 -- --------------------------------------------------------
 
@@ -151,7 +152,8 @@ INSERT INTO `submission` (`submission_id`, `book_id`, `user_id`) VALUES
 (8, 8, 7),
 (9, 4, 8),
 (10, 9, 9),
-(11, 1, 2);
+(11, 1, 2),
+(12, 14, 2);
 
 -- --------------------------------------------------------
 
@@ -188,7 +190,9 @@ INSERT INTO `unggah` (`no`, `title`, `author`, `category`, `description`, `file`
 (10, 'The Theory of Everything: The Origin and Fate of the Universe', 'Stephen W Hawking', 'SAP', 'Based on a series of lectures given at Cambridge University, Professor Hawking\'s work introduced \"the history of ideas about the universe\" as well as today\'s most important scientific theories about time, space, and the cosmos in a clear, easy-to-understand way.', 'The Theory of Everything.pdf', '2020-03-03', 'Pengajuan Diterima', 'euler'),
 (11, 'Buku Fadil', 'Julian Septiana Aji', 'Business English', 'Materi tentang diorama kehidupan, kadang diatas kadang bisa dibawah', 'Buku Fadil.pdf', '2020-03-22', 'Pengajuan Diterima', 'fidrian'),
 (12, 'Pandemi Corona', 'Andrea Karya Hanks', 'SSIS', 'Pandemi covid 19 sungguh berbahaya', 'sentimen-fixed.pdf', '2020-03-25', 'Pengajuan Diterima', 'kartiko'),
-(13, 'Belajar Java', 'M. Arief Ramadhan', 'Java', 'Belajar java untuk level pemula', 'java.pdf', '2020-03-26', 'Pengajuan Diterima', 'ica');
+(13, 'Belajar Java', 'M. Arief Ramadhan', 'Java', 'Belajar java untuk level pemula', 'java.pdf', '2020-03-26', 'Pengajuan Diterima', 'ica'),
+(14, 'Filip Test PDF', 'Filip', 'Android Development', 'Filip Test PDF', 'Chp-09 Justifying and Managing ISIT Investments.pdf', '2020-03-26', 'Pengajuan Diterima', 'newton'),
+(15, 'Filip Test MP3', 'Bapak Filip', 'Android Development', 'Ini Test Filip MP3', 'Deliverables of ISIT Strategic Plan .pptx', '2020-03-26', 'Dalam Proses Review', 'newton');
 
 -- --------------------------------------------------------
 
@@ -212,9 +216,9 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`user_id`, `username`, `password`, `role`, `email`, `nama_lengkap`) VALUES
 (1, 'admin', 'admin', 'admin', 'admin@anabatic.com', 'Administrator'),
 (2, 'test', '123', 'editor', 'learningsupport@anabatic.com', 'Learning Center'),
-(3, 'newton', 'isaac', 'user', NULL, NULL),
-(4, 'euler', 'leonhard', 'user', NULL, NULL),
-(5, 'faraday', 'michael', 'user', NULL, NULL),
+(3, 'newton', 'isaac', 'user', 'newton@anabatic.com', 'Isaac Newton'),
+(4, 'euler', 'leonhard', 'user', 'euler@anabatic.com', 'Leonardo Euler'),
+(5, 'faraday', 'michael', 'user', 'faraday@anabatic.com', 'Michael Faraday'),
 (6, 'fidrian', 'qwerty123', 'user', 'fidrian123@gmail.com', 'M. Fadil Fidrian'),
 (7, 'julian', 'julian', 'user', 'julian@gmail.com', 'julian'),
 (8, 'binar', 'qwerty1234.', 'user', 'binar@gmail.com', 'binariyantoaji'),
@@ -274,7 +278,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `category`
 --
@@ -289,12 +293,12 @@ ALTER TABLE `purchase`
 -- AUTO_INCREMENT for table `submission`
 --
 ALTER TABLE `submission`
-  MODIFY `submission_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `submission_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `unggah`
 --
 ALTER TABLE `unggah`
-  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `user`
 --
