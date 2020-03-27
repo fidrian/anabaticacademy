@@ -11,7 +11,7 @@
         $daftarkategori = daftarKategori("category");
         $limit = 0;
         while ($row = mysqli_fetch_row($daftarkategori)) {
-          if ($limit < 5) {
+          if ($limit < 22) {
             echo '
             <li><a href="shop-category.php?id='.$row[1].'&offset=0">'.$row[1].'</a></li>
             ';
@@ -25,7 +25,7 @@
 
 </div>
 
-<div class="panel panel-default sidebar-menu">
+<!-- <div class="panel panel-default sidebar-menu">
   <div class="panel-harga">
     <div class="panel-heading">
       <h3 class="panel-title">Filter Harga</h3>
@@ -47,9 +47,9 @@
       </ul>
     </div>
   </div>
-</div>
+</div> -->
 
-<div class="panel panel-default sidebar-menu">
+<!-- <div class="panel panel-default sidebar-menu">
 
   <div class="panel-kategori">
     <div class="panel-heading">
@@ -70,4 +70,4 @@
     </div>
   </div>
 
-</div>
+</div> -->
