@@ -203,14 +203,6 @@ function daftarBuku($table) {
               </div>
 
               <div class="form-group">
-                <label for="subkategori"></label>
-                <select class="form-control form-register form-group-kategori" id="insert-subkategori" name="subkategori" required>
-                  <option>-Pilih Sub Kategori-</option>
-                  <option>Fiksi</option>
-                  <option>Non Fiksi</option>
-                </select>
-              </div>
-              <div class="form-group">
                <textarea class="form-control" rows="5" id="insert-deskripsi" name="deskripsiBuku" placeholder="Deskripsi materi..." required></textarea>
               </div>
 

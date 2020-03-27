@@ -34,7 +34,6 @@
         <form action="services/upload.php" method="post" enctype="multipart/form-data">
           <input type="text" class="form-control form-register" id="insert-judulBuku" name="judulBuku" placeholder="Judul materi..." required>
           <input type="text" class="form-control form-register" id="insert-namaPenulis" name="namaPenulis" placeholder="Nama penulis..." required>
-          <br>
           <div class="form-group">
             <label for="kategori"></label>
             <select class="form-control form-register form-group-kategori" name="kategori" id="kategori" required>
