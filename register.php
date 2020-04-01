@@ -25,7 +25,7 @@
     <div class="row">
       <div class="pt-2 pl-5 pr-4 pb-5 m-auto w-60 border">
         <!-- <div class="col-md-8 "> -->
-          <h1 class="register-title">Daftar Akun Anabatic Learning Academy</h1>
+          <h1 class="register-theme">Daftar Akun Anabatic Academy</h1>
   
           <form action="services/register.php" method="post" class="form-register-group">
             <input type="text" class="form-control form-register" name="pengguna" id="insert-username" placeholder="Nama pengguna..." required>

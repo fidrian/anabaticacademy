@@ -796,7 +796,11 @@ footer .glyphicon {
 /* REGISTER.PHP */
 
 .register {
-    margin: 50px;
+    margin: 100px 50px 50px 50px;
+}
+
+.register-theme{
+    margin: 30px auto 30px 0;
 }
 
 .form-register-group {
@@ -1183,7 +1187,7 @@ footer .glyphicon {
 
 .pt-2,
 .py-2 {
-    padding-top: 0.5rem !important;
+    padding-top: 0.1rem !important;
 }
 
 .pr-2,
