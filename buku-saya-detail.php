@@ -128,14 +128,6 @@ else {
                 <td><strong>Tanggal Beli</strong></td>
                 <td>'.$tanggal.'</td>
               </tr>
-              <tr>
-                <td><strong>ISBN</strong></td>
-                <td>'.$row['isbn'].'</td>
-              </tr>
-              <tr>
-                <td><strong>SKU</strong></td>
-                <td>'.$row['sku'].'</td>
-              </tr>
               ';
             }
             ?>
