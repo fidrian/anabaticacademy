@@ -171,7 +171,6 @@
         echo'
         <h1 id="ebook-title">'.$row['title'].'</h1>
         <p class="ebook-author">Penulis : '.$row['author'].'</p>
-        <p class="ebook-author">Penerbit : '.$row['publisher'].'</p>
         <p class="ebook-description text-justify">'.$row['description'].'</p>
         <p class="ebook-author">Format yang tersedia:</p>
         <ul class="list-inline">
