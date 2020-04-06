@@ -221,10 +221,12 @@
 										$conn = connectDB();
 										$user_id = $_SESSION['user_id'];
 										$datePaid = date("Y-m-d");
-										if (isset($row[0])) {
-											$no = $row[0];
-											$query = mysqli_query($conn, "INSERT INTO purchase (book_id, user_id, date) VALUES ('$row[0]', '$_SESSION['user_id']', 'date("Y-m-d")')");
-										}
+										$no = $row[0];
+										$date = date("Y=m-d");
+										$user = $_SESSION['user_id'];
+										$query = "INSERT INTO purchase (book_id, user_id, date) VALUES ('$row[0]', '$user', '$date')";
+										$sql = mysqli_query($conn, $query);
+									
 							echo"}
 								 </script>";
                             echo '
