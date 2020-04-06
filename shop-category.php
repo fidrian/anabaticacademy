@@ -209,9 +209,24 @@
                             // } else {
                             //   echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
                             // }
-                            echo '
-                            <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>
-                            ';
+                            // echo '
+                            // <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>
+							// ';
+							echo '
+                            <a onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
+							echo"<script type='text/javascript'>
+									function sukses(){
+										alert('Materi berhasil ditambahkan');
+										window.location = './buku-saya.php';";
+										$conn = connectDB();
+										$user_id = $_SESSION['user_id'];
+										$datePaid = date("Y-m-d");
+										if (isset($row[0])) {
+											$no = $row[0];
+											$query = mysqli_query($conn, "INSERT INTO purchase (book_id, user_id, date) VALUES ('$row[0]', '$_SESSION['user_id']', 'date("Y-m-d")')");
+										}
+							echo"}
+								 </script>";
                             echo '
                         </div>
                         </div>
