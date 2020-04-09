@@ -1450,15 +1450,15 @@ h3.heading {
     letter-spacing: 0px;
 }
 
-::-webkit-scrollbar {
+ul ::-webkit-scrollbar {
     background: #D72323;
     /* background-color: rgb(199, 35, 35) !important; */
 }
 
-::-webkit-scrollbar-thumb {
+ul ::-webkit-scrollbar-thumb {
     background: rgb(199, 35, 35);
 }
 
-::-webkit-scrollbar-corner {
+ul ::-webkit-scrollbar-corner {
     background: #000;
 }
