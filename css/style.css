@@ -799,7 +799,7 @@ footer .glyphicon {
     margin: 100px 50px 50px 50px;
 }
 
-.register-theme{
+.register-theme {
     margin: 30px auto 30px 0;
     color: #0A5494;
 }
@@ -1427,4 +1427,38 @@ h3.heading {
     .w3layouts-map iframe {
         min-height: 350px;
     }
+}
+
+.no-decor {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.nav-scroll {
+    /* height: 30em; */
+    max-height: 30em;
+    /* line-height: 2em; */
+    /* border: 1px solid #ccc; */
+    /* padding: 0; */
+    /* margin: 0; */
+    overflow: auto;
+    overflow-x: hidden;
+    letter-spacing: 0px;
+}
+
+::-webkit-scrollbar {
+    background: #D72323;
+    /* background-color: rgb(199, 35, 35) !important; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(199, 35, 35);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
 }
