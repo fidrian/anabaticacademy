@@ -36,26 +36,26 @@
       return $jumlah;
   }
 
-  function getSoldFiksi($bulan){
-    $conn = connectDB();
+//   function getSoldFiksi($bulan){
+//     $conn = connectDB();
 
-    $sql = "SELECT count(*) as terjual from book where MONTH(publish_date)='$bulan' AND (category = 'Fiksi' OR category = 'Novel' OR category = 'Cerpen' OR category = 'Puisi' OR category = 'Drama' OR category = 'Komik' OR category = 'Dongeng' OR category = 'Fabel' OR category = 'Mitos')";
+//     $sql = "SELECT count(*) as terjual from book where MONTH(publish_date)='$bulan' AND (category = 'Fiksi' OR category = 'Novel' OR category = 'Cerpen' OR category = 'Puisi' OR category = 'Drama' OR category = 'Komik' OR category = 'Dongeng' OR category = 'Fabel' OR category = 'Mitos')";
 
-    if(!$result = mysqli_query($conn, $sql)) {
-      die("Error: $sql");
-    }
-    mysqli_close($conn);
+//     if(!$result = mysqli_query($conn, $sql)) {
+//       die("Error: $sql");
+//     }
+//     mysqli_close($conn);
 
-    $query = $result;
-    $row = $query->fetch_array();
-    $jumlah[] = $row['terjual'];
-    return $jumlah;
-}
+//     $query = $result;
+//     $row = $query->fetch_array();
+//     $jumlah[] = $row['terjual'];
+//     return $jumlah;
+// }
 
-function getSoldNonFiksi($bulan){
+function getKoleksi($bulan){
   $conn = connectDB();
 
-  $sql = "SELECT count(*) as terjual from book where MONTH(publish_date)='$bulan' AND (category != 'Fiksi' AND category != 'Novel' AND category != 'Cerpen' AND category != 'Puisi' AND category != 'Drama' AND category != 'Komik' AND category != 'Dongeng' AND category != 'Fabel' AND category != 'Mitos')";
+  $sql = "SELECT count(*) as terjual from book where MONTH(publish_date)='$bulan'";
 
   if(!$result = mysqli_query($conn, $sql)) {
     die("Error: $sql");
@@ -391,7 +391,7 @@ $(function () {
         type                : 'line',
         data                : <?php
                                 for($bulan=1;$bulan<=5;$bulan++){
-                                  $jumlah_nf[] = getSoldNonFiksi($bulan);
+                                  $jumlah_nf[] = getKoleksi($bulan);
                                 }
                               echo json_encode($jumlah_nf);
                              ?>,
