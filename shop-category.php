@@ -213,20 +213,12 @@
                             // <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>
 							// ';
 							echo '
-                            <a  href="collection.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
-							// echo"<script type='text/javascript'>
-							// 		function sukses(){
-							// 			alert('Materi berhasil ditambahkan');
-							// 			window.location = './buku-saya.php';";
-							// 			$conn = connectDB();
-							// 			$id = $row[0];
-							// 			$date = date("Y=m-d");
-							// 			$user = $_SESSION['user_id'];
-							// 			$query = "INSERT INTO purchase (book_id, user_id, date) VALUES ('$id', '$user', '$date')";
-							// 			$sql = mysqli_query($conn, $query);
-									
-							// echo"}
-							// 	 </script>";
+                            <a  href="services/collection.php?id='.$row[0].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
+							echo"<script type='text/javascript'>
+									function sukses(){
+										alert('Materi berhasil ditambahkan');
+									}
+								 </script>";
                             echo '
                         </div>
                         </div>

@@ -181,9 +181,14 @@
         ';
       }
       echo '
-      <a href="cart.php?id='.$row['book_id'].'" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
-      &nbsp;&nbsp;
-      <a href="services/buy.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>
+      <a href="services/collection.php?id='.$row['book_id'].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
+      &nbsp;&nbsp;';
+	  echo"<script type='text/javascript'>
+				function sukses(){
+					alert('Materi berhasil ditambahkan');
+				}
+			</script>";
+      echo'<a href="services/buy.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>
       ';
 		?>
 
@@ -211,9 +216,15 @@
               <div class="card-body">
                 <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
                 <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[3].'</p>
-							  <p class="card-text ebook-category" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[6].'</p>
-                <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
-                </div>
+							  <p class="card-text ebook-category" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[6].'</p>';
+				echo '
+                <a  href="services/collection.php?id='.$row[0].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
+				echo"<script type='text/javascript'>
+					function sukses(){
+						alert('Materi berhasil ditambahkan');
+					}
+				</script>";
+                echo'</div>
             </div>
           </div>
         </div>
@@ -240,9 +251,15 @@
                       <div class="card-body">
                         <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
                         <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[3].'</p>
-							          <p class="card-text ebook-category" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[7].'</p>
-                        <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
-                      </div>
+							          <p class="card-text ebook-category" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[7].'</p>';
+						echo '
+						<a  href="services/collection.php?id='.$row[0].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
+						echo"<script type='text/javascript'>
+							function sukses(){
+								alert('Materi berhasil ditambahkan');
+							}
+						</script>";
+                      echo'</div>
                     </div>
                   </div>
                 </div>

@@ -235,8 +235,12 @@
                             //   echo '<h4 class="card-title ebook-price"><strong>Stok Kosong</strong></h4>';
                             // }
                             echo '
-                            <a href="cart.php?id='.$row[0].'" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>
-                            ';
+                            <a  href="services/collection.php?id='.$row[0].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
+							echo"<script type='text/javascript'>
+									function sukses(){
+										alert('Materi berhasil ditambahkan');
+									}
+								 </script>";
                             echo '
                         </div>
                         </div>

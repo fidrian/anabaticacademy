@@ -30,7 +30,7 @@
 
     <!-- ALL CSS HERE  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="stylesheet" href="css/style.css?v=6">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
 
@@ -81,14 +81,16 @@
                 Kategori <i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="nav nav-scroll"> 
                 <?php
                   $daftarkategori = daftarKategori("category");
                   while ($row = mysqli_fetch_row($daftarkategori)) {
                     echo '
-                    <a class="dropdown-item" href="shop-category.php?id='.$row[1].'&offset=0">'.$row[1].'</a>
+                    <li class="no-decor"><a class="dropdown-item" href="shop-category.php?id='.$row[1].'&offset=0">'.$row[1].'</a></li>
                     ';
                   }
-                ?>
+                  ?>
+                  </ul>
               </div>
             </li>
             <li><a href="shop.php?offset=0">Katalog</a></li>
@@ -114,25 +116,29 @@
                 if ($_SESSION["role"] === "editor"){
                   echo '
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="lihat-profil.php">Profil</a><br/>
-                  <a class="dropdown-item" href="daftar-pengajuan.php">Editor Area</a><br />  
+                  <ul class="nav nav-scroll"> 
+                      <li class="no-decor"><a class="dropdown-item" href="lihat-profil.php">Profil</a></li>
+                      <li class="no-decor"><a class="dropdown-item" href="daftar-pengajuan.php">Editor Area</a></li>
                   ';
                 }else if ($_SESSION["role"] === "admin"){
                   echo '
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="lihat-profil.php">Profil</a><br/>
-                  <a class="dropdown-item" href="statistik.php">Statistik</a><br />  
+                  <ul class="nav nav-scroll"> 
+                    <li class="no-decor"><a class="dropdown-item" href="lihat-profil.php">Profil</a><br/></li>
+                    <li class="no-decor"><a class="dropdown-item" href="statistik.php">Statistik</a><br /></li>
                   ';
                 }else{
                   echo'
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="lihat-profil.php">Profil</a><br/>
-                  <a class="dropdown-item" href="status-pengajuan.php">Status Pengajuan</a><br/>
-                  <a class="dropdown-item" href="buku-saya.php">Buku Saya</a><br/>
-                  ';
+                  <ul class="nav nav-scroll"> 
+                    <li class="no-decor"><a class="dropdown-item" href="lihat-profil.php">Profil</a></li>
+                    <li class="no-decor"><a class="dropdown-item" href="status-pengajuan.php">Status Pengajuan</a></li>
+                    <li class="no-decor"><a class="dropdown-item" href="buku-saya.php">Buku Saya</a></li>
+                    ';
                   }
                   echo '
-                  <a href="services/logout.php" class="dropdown-item" href="#">Keluar</a>
+                  <li class="no-decor"><a href="services/logout.php" class="dropdown-item" href="#">Keluar</a></li>
+                  </ul>
                 </div>
               </li>
 							';

@@ -36,26 +36,26 @@
       return $jumlah;
   }
 
-  function getSoldFiksi($bulan){
-    $conn = connectDB();
+//   function getSoldFiksi($bulan){
+//     $conn = connectDB();
 
-    $sql = "SELECT count(*) as terjual from book where MONTH(publish_date)='$bulan' AND (category = 'Fiksi' OR category = 'Novel' OR category = 'Cerpen' OR category = 'Puisi' OR category = 'Drama' OR category = 'Komik' OR category = 'Dongeng' OR category = 'Fabel' OR category = 'Mitos')";
+//     $sql = "SELECT count(*) as terjual from book where MONTH(publish_date)='$bulan' AND (category = 'Fiksi' OR category = 'Novel' OR category = 'Cerpen' OR category = 'Puisi' OR category = 'Drama' OR category = 'Komik' OR category = 'Dongeng' OR category = 'Fabel' OR category = 'Mitos')";
 
-    if(!$result = mysqli_query($conn, $sql)) {
-      die("Error: $sql");
-    }
-    mysqli_close($conn);
+//     if(!$result = mysqli_query($conn, $sql)) {
+//       die("Error: $sql");
+//     }
+//     mysqli_close($conn);
 
-    $query = $result;
-    $row = $query->fetch_array();
-    $jumlah[] = $row['terjual'];
-    return $jumlah;
-}
+//     $query = $result;
+//     $row = $query->fetch_array();
+//     $jumlah[] = $row['terjual'];
+//     return $jumlah;
+// }
 
-function getSoldNonFiksi($bulan){
+function getKoleksi($bulan){
   $conn = connectDB();
 
-  $sql = "SELECT count(*) as terjual from book where MONTH(publish_date)='$bulan' AND (category != 'Fiksi' AND category != 'Novel' AND category != 'Cerpen' AND category != 'Puisi' AND category != 'Drama' AND category != 'Komik' AND category != 'Dongeng' AND category != 'Fabel' AND category != 'Mitos')";
+  $sql = "SELECT count(*) as terjual from book where MONTH(publish_date)='$bulan'";
 
   if(!$result = mysqli_query($conn, $sql)) {
     die("Error: $sql");
@@ -68,70 +68,71 @@ function getSoldNonFiksi($bulan){
   return $jumlah;
 }
 
-  function getpenulis() {
-		$conn = connectDB();
+function getaccount() {
+  $conn = connectDB();
 
-		$sql = "SELECT count(*) FROM user WHERE role = 'penulis'";
+  $sql = "SELECT count(*) FROM user";
 
-		if(!$result = mysqli_query($conn, $sql)) {
-			die("Error: $sql");
-		}
-
-		mysqli_close($conn);
-		return $result;
-	}
-
-	function getpembaca() {
-		$conn = connectDB();
-
-		$sql = "SELECT count(*) FROM user WHERE role = 'user'";
-
-		if(!$result = mysqli_query($conn, $sql)) {
-			die("Error: $sql");
-		}
-
-		mysqli_close($conn);
-		return $result;
+  if(!$result = mysqli_query($conn, $sql)) {
+    die("Error: $sql");
   }
 
-  function statusPenjualan() {
-		$conn = connectDB();
+  mysqli_close($conn);
+  return $result;
+}
 
-		$sql = "SELECT count(quantity) FROM book";
+function getpembaca() {
+  $conn = connectDB();
 
-		if(!$result = mysqli_query($conn, $sql)) {
-			die("Error: $sql");
-		}
+  $sql = "SELECT count(*) FROM user WHERE role = 'user'";
 
-		mysqli_close($conn);
-		return $result;
+  if(!$result = mysqli_query($conn, $sql)) {
+    die("Error: $sql");
   }
 
-  function getKategori() {
-		$conn = connectDB();
+  mysqli_close($conn);
+  return $result;
+}
 
-		$sql = "SELECT count(*) FROM category";
+function statusPenjualan() {
+  $conn = connectDB();
 
-		if(!$result = mysqli_query($conn, $sql)) {
-			die("Error: $sql");
-		}
+  $sql = "SELECT count(quantity) FROM book";
 
-		mysqli_close($conn);
-		return $result;
+  if(!$result = mysqli_query($conn, $sql)) {
+    die("Error: $sql");
   }
 
-	function getbook() {
-		$conn = connectDB();
+  mysqli_close($conn);
+  return $result;
+}
 
-		$sql = "SELECT count(*) FROM book";
+function getKategori() {
+  $conn = connectDB();
 
-		if(!$result = mysqli_query($conn, $sql)) {
-			die("Error: $sql");
-		}
+  $sql = "SELECT count(*) FROM category";
 
-		mysqli_close($conn);
-		return $result;
-	}
+  if(!$result = mysqli_query($conn, $sql)) {
+    die("Error: $sql");
+  }
+
+  mysqli_close($conn);
+  return $result;
+}
+
+function getbook() {
+  $conn = connectDB();
+
+  $sql = "SELECT count(*) FROM book";
+
+  if(!$result = mysqli_query($conn, $sql)) {
+    die("Error: $sql");
+  }
+
+  mysqli_close($conn);
+  return $result;
+}
+
 
 ?>
 
@@ -152,9 +153,9 @@ function getSoldNonFiksi($bulan){
               </div>
               <div class='col-xs-9 text-right'>
                 <div id="leadmonth"></div>
-                <div>Total Penulis</div>
+                <div>Total User</div>
                 <?php
-                  $countuser = getpenulis();
+                  $countuser = getaccount();
                   while ($row = mysqli_fetch_row($countuser)) {
                     echo '<h2 class="text-white">'.$row[0].'</h2>';
                   }
@@ -174,7 +175,7 @@ function getSoldNonFiksi($bulan){
               </div>
               <div class='col-xs-9 text-right'>
                 <div id="leadmonth"></div>
-                <div>Total Buku Terbit</div>
+                <div>Total Materi Terbit</div>
                 <?php
                   $countuser = getbook();
                   while ($row = mysqli_fetch_row($countuser)) {
@@ -218,7 +219,7 @@ function getSoldNonFiksi($bulan){
               </div>
               <div class='col-xs-9 text-right'>
                 <div id="leadmonth"></div>
-                <div>Total Kategori Buku</div>
+                <div>Total Kategori Materi</div>
                 <?php
                   $countuser = getKategori();
                   while ($row = mysqli_fetch_row($countuser)) {
@@ -243,7 +244,7 @@ function getSoldNonFiksi($bulan){
               <div class="card">
                 <div class="card-header border-0">
                   <div class="d-flex justify-content-between">
-                    <h3 class="card-title">Penjualan</h3>
+                    <h3 class="card-title">Materi Koleksi</h3>
                   </div>
                 </div>
                 <div class="card-body">
@@ -254,12 +255,12 @@ function getSoldNonFiksi($bulan){
                   <br>
                   <div class="d-flex flex-row justify-content-end">
                     <span class="mr-2 text-tiny">
-                      <i class="fa fa-square text-primary" style="color:#007bff"></i> Non Fiksi &nbsp;&nbsp;
+                      <i class="fa fa-square text-primary" style="color:#007bff"></i> Materi &nbsp;&nbsp;
                     </span>
 
-                    <span class="text-tiny">
+                    <!--<span class="text-tiny">
                       <i class="fa fa-square text-gray" style="color:#ced4da"></i> Fiksi
-                    </span>
+                    </span>-->
                   </div>
                 </div>
               </div>
@@ -279,7 +280,7 @@ function getSoldNonFiksi($bulan){
                   <br>
                   <div class="d-flex flex-row justify-content-end">
                     <span class="mr-2 text-tiny">
-                      <i class="fa fa-square text-primary" style="color:#007bff"></i> Dalam proses review &nbsp;&nbsp;
+                      <i class="fa fa-square text-primary" style="color:#007bff"></i> Dalam Proses Review &nbsp;&nbsp;
                     </span>
 
                     <span class="text-tiny">
@@ -390,7 +391,7 @@ $(function () {
         type                : 'line',
         data                : <?php
                                 for($bulan=1;$bulan<=5;$bulan++){
-                                  $jumlah_nf[] = getSoldNonFiksi($bulan);
+                                  $jumlah_nf[] = getKoleksi($bulan);
                                 }
                               echo json_encode($jumlah_nf);
                              ?>,
@@ -400,20 +401,21 @@ $(function () {
         pointBackgroundColor: '#007bff',
         fill                : false
       },
-        {
-          type                : 'line',
-          data                : <?php
-                                  for($bulan=1;$bulan<=5;$bulan++){
-                                    $jumlah_f[] = getSoldFiksi($bulan);
-                                  }
-                                  echo json_encode($jumlah_f);
-                                ?>,
-          backgroundColor     : 'tansparent',
-          borderColor         : '#ced4da',
-          pointBorderColor    : '#ced4da',
-          pointBackgroundColor: '#ced4da',
-          fill                : false
-        }]
+        //{
+        //  type                : 'line',
+        //  data                : ?php
+        //                          for($bulan=1;$bulan<=5;$bulan++){
+        //                            $jumlah_f[] = getSoldFiksi($bulan);
+        //                          }
+        //                          echo json_encode($jumlah_f);
+        //                        ?>,
+        //  backgroundColor     : 'tansparent',
+        //  borderColor         : '#ced4da',
+        //  pointBorderColor    : '#ced4da',
+        //  pointBackgroundColor: '#ced4da',
+        //  fill                : false
+        //}
+	  ]
     },
     options: {
       maintainAspectRatio: false,
@@ -458,6 +460,7 @@ $(function () {
 <?php
   require_once("templates/footer.php");
 ?>
+
 
 <!-- <!DOCTYPE html>
 <html lang="en">
