@@ -166,7 +166,6 @@
 	}
 
 ?>
-<br>
 
 <div class="shop section-margin">
   <div class="container">
