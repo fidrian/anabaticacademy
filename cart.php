@@ -57,7 +57,7 @@ if(!isset($_SESSION['namauser'])) {
 
 ?>
 
-<div class="cart section-mini-margin">
+<div class="cart section-margin">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">

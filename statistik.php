@@ -236,7 +236,7 @@ function getbook() {
 
     </div>
 
-    <div class="row section-mini-margin">
+    <div class="row section-margin">
       <div class="content-grafik">
 
           <div class="row">
