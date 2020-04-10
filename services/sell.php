@@ -69,8 +69,9 @@
 			$uploadOk = 0;
 		}
 		// Allow certain file formats
-		if($fileType != "epug" && $fileType != "mobi" && $fileType != "pdf"
-		&& $fileType != "txt" ) {
+		if($fileType != "doc" && $fileType != "docx" && $fileType != "pdf"
+			&& $fileType != "pptx" && $fileType != "mp3" && $fileType != "mp4"
+			&& $fileType != "wmv") {
 			echo "Sorry, only EPUG, MOBI, PDF, TXT files are allowed.";
 			$uploadOk = 0;
 		}
