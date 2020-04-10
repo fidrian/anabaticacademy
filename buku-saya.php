@@ -74,7 +74,7 @@ function myBook($table) {
                   <a href="status-pengajuan.php">Status Pengajuan</a>
                 </li>
                 <li class="active-profil">
-                  <a href="buku-saya.php">Buku Saya</a>
+                  <a href="buku-saya.php">Koleksi Saya</a>
                 </li>
               </ul>
             </div>
@@ -83,9 +83,9 @@ function myBook($table) {
       </div>
 
       <div class="col-md-9">
-        <h1 class="register-title">Buku Saya</h1>
+        <h1 class="register-title">Koleksi Saya</h1>
 
-        <h2>Daftar Pembelian Buku Saya</h2>
+        <h2>Daftar Koleksi Saya</h2>
 
         <div class="table-details">
           <table class="table table-hover table-bordered table-responsive">
@@ -124,7 +124,7 @@ function myBook($table) {
                       <td class="text-center">'.$row['category'].'</td>
                       <td class="text-center">'.$tanggal.'</td>
                       <td class="text-center"><a type="button" class="btn btn-info" href="buku-saya-detail.php?id='.$row['purchase_id'].'"> <i class="fa fa-info"></i>&nbsp; Detail </a></td>
-                      <td class="text-center"><a href="services/preview.php?id='.$row['file'].'" type="button" class="btn btn-warning"> <i class="fa fa-book"></i>&nbsp;Baca</button></td>
+                      <td class="text-center"><a href="services/preview.php?id='.$row['file'].'" type="button" class="btn btn-warning"> <i class="fa fa-eye"></i>&nbsp;Lihat</button></td>
                       <td class="text-center"><a href="services/download.php?id='.$row['file'].'" type="button" class="btn btn-success"> <i class="fa fa-download"></i>&nbsp;Download</button></td>
                     </tr>
                   </tbody>

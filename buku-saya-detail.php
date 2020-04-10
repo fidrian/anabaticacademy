@@ -66,7 +66,7 @@ else {
                   <a href="status-pengajuan.php">Status Pengajuan</a>
                 </li>
                 <li class="active-profil">
-                  <a href="buku-saya.php">Buku Saya</a>
+                  <a href="buku-saya.php">Koleksi Saya</a>
                 </li>
               </ul>
             </div>
@@ -75,7 +75,7 @@ else {
       </div>
 
       <div class="col-md-9">
-        <h1 class="register-title">Detail Buku</h1>
+        <h1 class="register-title">Detail Materi</h1>
 
         <div class="table-details">
           <table class="table table-hover table-bordered table-responsive">
@@ -109,7 +109,7 @@ else {
               echo '
               <tbody>
               <tr>
-                <td><strong>Judul Buku</strong></td>
+                <td><strong>Judul Materi</strong></td>
                 <td>'.$row['title'].'</td>
               </tr>
               <tr>
@@ -125,7 +125,7 @@ else {
                 <td>'.$row['description'].'</td>
               </tr>
               <tr>
-                <td><strong>Tanggal Beli</strong></td>
+                <td><strong>Tanggal Koleksi</strong></td>
                 <td>'.$tanggal.'</td>
               </tr>
               ';

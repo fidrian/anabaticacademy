@@ -133,7 +133,7 @@
                   <ul class="nav nav-scroll"> 
                     <li class="no-decor"><a class="dropdown-item" href="lihat-profil.php">Profil</a></li>
                     <li class="no-decor"><a class="dropdown-item" href="status-pengajuan.php">Status Pengajuan</a></li>
-                    <li class="no-decor"><a class="dropdown-item" href="buku-saya.php">Buku Saya</a></li>
+                    <li class="no-decor"><a class="dropdown-item" href="buku-saya.php">Koleksi Saya</a></li>
                     ';
                   }
                   echo '

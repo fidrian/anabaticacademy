@@ -92,7 +92,7 @@ function profile() {
                   <a href="status-pengajuan.php">Status Pengajuan</a>
                 </li>
                 <li>
-                  <a href="buku-saya.php">Buku Saya</a>
+                  <a href="buku-saya.php">Koleksi Saya</a>
                 </li>
                 ';
               }

@@ -153,7 +153,7 @@ function getbook() {
               </div>
               <div class='col-xs-9 text-right'>
                 <div id="leadmonth"></div>
-                <div>Total User</div>
+                <div>Total Pengguna</div>
                 <?php
                   $countuser = getaccount();
                   while ($row = mysqli_fetch_row($countuser)) {
@@ -306,7 +306,7 @@ function getbook() {
 <script src="dist/js/adminlte.js"></script>
 <script src="js/Chart.min.js"></script>
 <?php
-   $label = ['JANUARI', 'FEBRUARI', 'MARET', 'APRIL', 'MEI'];
+   $label = ['JANUARI', 'FEBRUARI', 'MARET', 'APRIL'];
 ?>
 <script>
 $(function () {
@@ -330,7 +330,7 @@ $(function () {
           backgroundColor: '#007bff',
           borderColor    : '#007bff',
       data           : <?php
-                        for($bulan=1;$bulan<=5;$bulan++){
+                        for($bulan=1;$bulan<=4;$bulan++){
                           $jumlah_proses[] = getStatus($bulan, "Dalam Proses Review");
                         }
                        echo json_encode($jumlah_proses); ?>
@@ -339,7 +339,7 @@ $(function () {
           backgroundColor: '#ced4da',
           borderColor    : '#ced4da',
 		  data           : <?php
-                        for($bulan=1;$bulan<=5;$bulan++){
+                        for($bulan=1;$bulan<=4;$bulan++){
                           $jumlah_diterima[] = getStatus($bulan, "Pengajuan Diterima");
                         }
                        echo json_encode($jumlah_diterima); ?>
@@ -390,7 +390,7 @@ $(function () {
       datasets: [{
         type                : 'line',
         data                : <?php
-                                for($bulan=1;$bulan<=5;$bulan++){
+                                for($bulan=1;$bulan<=4;$bulan++){
                                   $jumlah_nf[] = getKoleksi($bulan);
                                 }
                               echo json_encode($jumlah_nf);
@@ -404,7 +404,7 @@ $(function () {
         //{
         //  type                : 'line',
         //  data                : ?php
-        //                          for($bulan=1;$bulan<=5;$bulan++){
+        //                          for($bulan=1;$bulan<=4;$bulan++){
         //                            $jumlah_f[] = getSoldFiksi($bulan);
         //                          }
         //                          echo json_encode($jumlah_f);
