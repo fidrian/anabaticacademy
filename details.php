@@ -188,7 +188,7 @@
 					alert('Materi berhasil ditambahkan');
 				}
 			</script>";
-      echo'<a href="services/buy.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>
+      echo'<a href="services/open.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>
       ';
 		?>
 
