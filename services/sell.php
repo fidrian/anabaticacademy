@@ -46,7 +46,7 @@
 		$uploadOk = 1;
 		$fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 		// Check if file is on .doc or .docx format
-		$type_apr = array('pdf','epug', 'mobi');
+		$type_apr = array('doc','docx','pdf','pptx','ppt','mp3','mp4','wmv');
 		$x = explode('.', $name_file);
 		$ekstensi = strtolower(end($x));
 		if(isset($_POST["submit"])) {
