@@ -196,7 +196,7 @@
       </div>
     </div>
 
-    <div class="row section-margin">
+    <div class="row section-margin-small">
         <div class="col-md-12">
 
         <?php
@@ -234,7 +234,7 @@
       </div>
     </div>
 
-    <div class="row section-margin">
+    <div class="row section-margin-small">
       <div class="col-md-12">
         <h2>Materi Populer Lainnya</h2>
 

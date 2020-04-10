@@ -236,6 +236,10 @@ footer .glyphicon {
     margin: 100px auto;
 }
 
+.section-margin-small {
+    margin: 50px auto;
+}
+
 .section-mini-margin {
     margin: 20px auto;
 }
