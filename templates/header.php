@@ -109,7 +109,7 @@
             <?php
 						if (isset($_SESSION["namauser"])){
               echo '
-              <a class="nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   '.$_SESSION["namauser"].' <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </a>';
@@ -125,7 +125,7 @@
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <ul class="nav nav-scroll"> 
                     <li class="no-decor"><a class="dropdown-item" href="lihat-profil.php">Profil</a></li>
-                    <a class="no-decor"><a class="dropdown-item" href="statistik.php">Statistik</a></a>
+                    <li class="no-decor"><a class="dropdown-item" href="statistik.php">Statistik</a></li>
                   ';
                 }else{
                   echo'
@@ -140,7 +140,7 @@
                   <li class="no-decor"><a href="services/logout.php" class="dropdown-item" href="#">Keluar</a></li>
                   </ul>
                 </div>
-              </a>
+              </li>
 							';
 						}else if(!isset($_SESSION['namauser'])) {
 							echo '
