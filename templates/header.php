@@ -124,8 +124,8 @@
                   echo '
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <ul class="nav nav-scroll"> 
-                    <li class="no-decor"><a class="dropdown-item" href="lihat-profil.php">Profil</a><br/></li>
-                    <li class="no-decor"><a class="dropdown-item" href="statistik.php">Statistik</a><br /></li>
+                    <li class="no-decor"><a class="dropdown-item" href="lihat-profil.php">Profil</a></li>
+                    <li class="no-decor"><a class="dropdown-item" href="statistik.php">Statistik</a></li>
                   ';
                 }else{
                   echo'
