@@ -85,7 +85,7 @@ function myBook($table) {
       <div class="col-md-9">
         <h1 class="register-title">Koleksi Saya</h1>
 
-        <h2>Daftar Koleksi Saya</h2>
+        <h2>Daftar Koleksi Materi Pembelajaran Saya</h2>
 
         <div class="table-details">
           <table class="table table-hover table-bordered table-responsive">
@@ -93,7 +93,7 @@ function myBook($table) {
               <tr>
                 <th class="text-center tabel-header">Judul Materi</th>
                 <th class="text-center tabel-header">Kategori</th>
-                <th class="text-center tabel-header">Tanggal Beli</th>
+                <th class="text-center tabel-header">Tanggal</th>
                 <th colspan="3" class="text-center tabel-header">Aksi</th>
               </tr>
             </thead>
