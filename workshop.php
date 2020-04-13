@@ -32,7 +32,7 @@ function connectDB() {
           <ol>
             <h4>
               <strong>Anda dapat mengunjungi kantor kami di: </strong><br><br>
-              <p>Graha BIP</p>
+              <p>Graha BIP Lt. 7</p>
               <p>Jl. Gatot Subroto No.Kav 23, Jakarta Selatan</p>
               <p>Telp: (021) 6577897</p>
               <p>Fax: (021) 5795455</p>
@@ -56,12 +56,12 @@ function connectDB() {
           <ol>
             <h4>
               <strong>Anda dapat mengunjungi workshop kami di: </strong><br><br>
-              <p>Jl. Margonda Raya, Pondok Cina</p>
-              <p>Kecamatan Beji</p>
-              <p>Kota Depok</p>
-              <p>Jawa Barat 16424</p>
-              <p>Telp. : (021) 3917279</p>
-            <p>Fax : (021) 3908967</p>
+              <p>Graha Anabatic Lt. 7</p>
+              <p>Jalan Scientia Boulevard Kav. U2 Summarecon Serpong</p>
+              <p>Tangerang</p>
+              <p>Banten 15810</p>
+              <p>Telp. : (021) 80636010</p>
+            <p>Fax : (021) 80636010</p>
             </h4>
           </ol>
         </div>
@@ -69,7 +69,7 @@ function connectDB() {
         <div class="col-md-6">
 
           <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 200px">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1139019296297!2d106.82881081427361!3d-6.379295695383972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec11e6ecbe35%3A0x45e4fdba5c9fa9c0!2sJl.%20Margonda%20Raya%2C%20Kota%20Depok%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1573962793014!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.250513820412!2d106.6198287!3d-6.2554799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16699d670e8909b1!2sGraha%20Anabatic!5e0!3m2!1sid!2sid!4v1586691533170!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
 
         </div>

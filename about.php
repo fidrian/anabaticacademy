@@ -32,30 +32,25 @@ function connectDB() {
       <div class="col-md-12 text-justify">
 
         <p>
-          <strong>Anabatic Learning Academy</strong> adalah perusahaan self publishing/ penerbit <i>indie.</i> Berawal dari interaksi online dengan para pecinta dunia kepenulisan, kami berinisiatif membangun fasilitas yang memudahkan para penulis untuk mengorbitkan karya mereka. Anabatic Learning Academy  merupakan tempat yang tepat untuk mempertemukan penulis dengan pembaca guna menyediakan apa yang mereka butuhkan, yaitu sebagai penulis yang membutuhkan wadah menerbitkan buku dengan cara yang lebih mudah dan ekonomis, sedangkan pembaca membutuhkan buku-buku berkualitas dan mudah terjangkau. Di sinilah kami berperan untuk menjembatani kebutuhan penulis dan pembaca.
-          <strong>Anabatic Learning Academy</strong> memberi kesempatan bagi siapapun juga tanpa kecuali untuk menerbitkan karya mereka. Kami menerima segala jenis naskah baik fiksi maupun non-fiksi dalam berbagai genre (asal tidak berbau pornografi, SARA dan mengandung kontroversi). Pada dasarnya, kami memposisikan diri sebagai sahabat para penulis. Semoga komitmen ini bisa kami pertahankan untuk terus berkontribusi bagi perkembangan dunia literasi Indonesia pada khususnya dan dunia pada umumnya.
-          Tunjukkan eksistensi karya Anda pada dunia. <strong>Read. Write. Inspire!</strong>
-
-
+			Anabatic Technologies adalah perusahaan IT yang cepat tumbuh dengan lebih dari 200 orang karyawan yang dinamis dan sangat terampil. Sejak pembentukannya, Anabatic bertujuan untuk memberikan nilai tinggi dan produk yang cocok terbaik dan layanan yang meningkatkan keunggulan kompetitif pelanggan. Anabatic telah berkembang menjadi salah satu perusahaan IT terkemuka di Indonesia, didukung oleh mitra teknologi kelas dunia seperti Temenos, SAP, Finarch, IBM, Cisco, Microsoft dan lain-lain. Anabatic memiliki produk dan layanan end-to-end solusi berkisar dari sistem inti perbankan (konvensional, Islam, keuangan mikro), perencanaan sumber daya perusahaan, intelijen bisnis, perusahaan gudang data, perencanaan sumber daya keuangan, perusahaan manajemen konten, perusahaan infrastruktur IT, dan Software-as-a-Service (SaaS). Anabatic menyediakan portal knowldege management yaitu <strong>Anabatic Learning Academy (ALA) </strong> yang bertujuan untuk menambah wawasan karyawan, memberikan fasilitas akses dan knowledge sharing antarkaryawan berupa fasilitas kemudahan melakukan akses informasi terbaru, fasilitas download berbagai file seperti materi pelatihan, video training, serta fitur lain yaitu Media Forum. Portal ini berisi sharing knowledge berdasarkan pengalaman (portofolio) Anabatic yang luas dalam menangani proyek di berbagai bidang industri. <strong>Target ALA</strong> adalah menjalankan program pelatihan IT bersertifikat internasional baik untuk internal Anabatic maupun kalangan industri IT.
+            <strong>Build. Share. Inspire!</strong>
         </p>
       </div>
 
       <div class="col-md-12 text-center visi-ebookhub">
         <ol>
-          <h2 id="greetings-1">Visi Anabatic Academy</h2>
-          <p class="visi-text">“Meningkatkan Pengetahuan dan Intelektual Bangsa Indonesia melalui Pendidikan”</p>
+          <h2 id="greetings-1">Visi PT Anabatic Technologies</h2>
+          <p class="visi-text">“PT Anabatic Technologies aims to be the leading IT solutions company in the region. We aim to be your most preferred business partner by utilizing our strategic customers and principals.”</p>
         </ol>
       </div>
+	  
+	   <div class="col-md-12 text-center visi-ebookhub">
         <ol>
-          <div class="text-center">
-            <h2 id="greetings-1">Misi Anabatic Academy</h2>
-          </div>
-          <div class="col-md-6 col-md-offset-3 text-justify">
-            <li>Mengembangkan dan menyebarluaskan ilmu pengetahuan, serta mengupayakan penerapannya untuk meningkatkan martabat kehidupan masyarakat dan kebudayaan nasional.</li>
-            <li>Meningkatkan minat baca dengan membuka akses membaca tanpa dibatasi ruang dan waktu melalui pemanfaatan teknologi.</li>
-            <li>Menjadi penyedia beragam konten digital berkualitas sesuai dengan ketentuan hukum yang berlaku.</li>
-          </div>
+          <h2 id="greetings-1">Misi PT Anabatic Technologies</h2>
+          <p class="visi-text">“PT Anabatic Technologies aspires to deliver the most suitable products and services to increase customer competitive advantage, while simultaneously developing growth to delight all stakeholders involved.”</p>
         </ol>
+      </div>
+	  
       </div>
     </div>
   </div>
