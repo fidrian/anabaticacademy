@@ -126,7 +126,7 @@ function daftarBuku($table) {
             </tbody>
           </table>
         </div>
-
+		<br>
         <h2>Pengajuan Diterima</h2>
 
 

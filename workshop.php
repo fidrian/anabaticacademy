@@ -60,8 +60,8 @@ function connectDB() {
               <p>Jalan Scientia Boulevard Kav. U2 Summarecon Serpong</p>
               <p>Tangerang</p>
               <p>Banten 15810</p>
-              <p>Telp. : (021) 80636010</p>
-            <p>Fax : (021) 80636010</p>
+              <p>Telp: (021) 80636010</p>
+            <p>Fax: (021) 80636010</p>
             </h4>
           </ol>
         </div>

@@ -243,39 +243,30 @@
 <!-- <div class="how-to-use">
   <div class="container">
     <div class="row">
-
         <div class="col-lg-12">
           <h1 class="how-to-use-title text-center">Bagaimana menerbitkan buku di Eboookhub?</h1>
         </div>
-
         <div class="col-md-4 col-sm-12">
           <div class="box-how-to-use box-shadow text-center">
             <i class="fa fa-upload fa-how-to-use" aria-hidden="true"></i>
             <h2>Unggah</h2>
             <p>Unggah draft e-book yang kamu miliki dan kami akan segera melakukan pengecekan dan penilaian kelayakan terbit.</p>
-
           </div>
         </div>
-
         <div class="col-md-4 col-sm-12">
           <div class="box-how-to-use box-shadow text-center">
             <i class="fa fa-edit fa-how-to-use" aria-hidden="true"></i>
             <h2>Proses Edit</h2>
             <p>Apabila draft e-book lulus uji kelayakan, maka kami akan mempersiapkan e-book milikmu untuk dipublikasi. </p>
-
           </div>
         </div>
-
         <div class="col-md-4 col-sm-12">
           <div class="box-how-to-use box-shadow text-center">
             <i class="fa fa-book fa-how-to-use" aria-hidden="true"></i>
             <h2>Terbit</h2>
             <p>Selamat! E-book milikmu sudah dipublikasi dan siap untuk dibaca oleh seluruh pecinta buku.</p>
-
           </div>
         </div>
-
-
     </div>
 </div>
 </div> -->
@@ -290,7 +281,6 @@
       <div class="col-lg-12">
         <h1>Partner Kami</h1>
       </div>
-
       <div class="col-md-3 col-sm-12">
         <a href="https://gramedia.com"><img src="images/gramedia.png" alt=""></a>
       </div>
@@ -349,8 +339,8 @@
                         <div class="panel-thumbnail" style="height:370px">
                             <img src="images/s4.png" alt="" class="img-fluid" />
                             <!-- <h3>04</h3> -->
-                            <h4 class="mt-3">Easy to Use</h4>
-                            <p class="mt-3">You can access from various browsers and platforms. just Click and BOOOM</p>
+                            <h4 class="mt-3">Easy to Use, on Any Platform</h4>
+                            <p class="mt-3">You can access from various browsers and platforms. just Click and BOOOM!</p>
                         </div>
                     </div>
                 </div>

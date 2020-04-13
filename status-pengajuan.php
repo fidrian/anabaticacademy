@@ -141,7 +141,6 @@ session_start();
   										<td class="text-center">'.$tanggal.'</td>
   										<td class="text-center">'.$row['status'].'</td>
   										<td class="text-center"><a class="btn btn-info" href="status-pengajuan-detail.php?id='.$row['no'].'"><i class="fa fa-info"></i>&nbsp;&nbsp;Detail</a></td>
-
   									</tr>
   									</tbody>';
   								}
@@ -151,7 +150,7 @@ session_start();
   					?>
           </table>
         </div>
-
+		<br>
         <h2>Pengajuan Diterima</h2>
 
 

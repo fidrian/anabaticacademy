@@ -170,14 +170,8 @@
 				$row = mysqli_fetch_assoc($detail_unggah);
         echo'
         <h1 id="ebook-title">'.$row['title'].'</h1>
-        <p class="ebook-author">Penulis : '.$row['author'].'</p>
-        <p class="ebook-description text-justify">'.$row['description'].'</p>
-        <p class="ebook-author">Format yang tersedia:</p>
-        <ul class="list-inline">
-          <li>.pdf</li>
-          <li>.epub</li>
-          <li>.mobi</li>
-        </ul>
+        <p class="ebook-author">Penulis: '.$row['author'].'</p>
+        <p class="ebook-description text-justify">Deskripsi: '.$row['description'].'</p>
         ';
       }
       echo '
