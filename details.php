@@ -99,7 +99,7 @@
 
 ?>
 <br>
-<div class="shop section-mini-margin">
+<div class="shop section-margin">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -196,7 +196,7 @@
       </div>
     </div>
 
-    <div class="row section-mini-margin">
+    <div class="row section-margin-small">
         <div class="col-md-12">
 
         <?php
@@ -234,7 +234,7 @@
       </div>
     </div>
 
-    <div class="row section-mini-margin">
+    <div class="row section-margin-small">
       <div class="col-md-12">
         <h2>Materi Populer Lainnya</h2>
 

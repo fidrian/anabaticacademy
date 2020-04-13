@@ -215,7 +215,7 @@ function daftarBuku($table) {
 
               <div class="form-group">
                 <label for="exampleFormControlFile1">
-                  Format buku dalam bentuk .pdf, .epug atau .mobi. Format penulisan dan layout dapat melihat pada halaman <a href="#">ini.</a> Ukuran file maksimal 50 MB.
+                Format materi dalam bentuk .doc, .docx, .pdf, .ppt, .mp3, .mp4, atau .wmv. Format penulisan dan layout dapat melihat pada halaman ini. Ukuran file maksimal 50 MB. <a href="#">ini.</a> Ukuran file maksimal 50 MB.
                 </label>
                 <input type="file" id="insert-fileEditor" name="fileEditor" required>
               </div>

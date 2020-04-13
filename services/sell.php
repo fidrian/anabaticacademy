@@ -46,7 +46,7 @@
 		$uploadOk = 1;
 		$fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 		// Check if file is on .doc or .docx format
-		$type_apr = array('pdf','epug', 'mobi');
+		$type_apr = array('doc','docx','pdf','pptx','ppt','mp3','mp4','wmv');
 		$x = explode('.', $name_file);
 		$ekstensi = strtolower(end($x));
 		if(isset($_POST["submit"])) {
@@ -69,8 +69,9 @@
 			$uploadOk = 0;
 		}
 		// Allow certain file formats
-		if($fileType != "epug" && $fileType != "mobi" && $fileType != "pdf"
-		&& $fileType != "txt" ) {
+		if($fileType != "doc" && $fileType != "docx" && $fileType != "pdf"
+			&& $fileType != "pptx" && $fileType != "mp3" && $fileType != "mp4"
+			&& $fileType != "wmv") {
 			echo "Sorry, only EPUG, MOBI, PDF, TXT files are allowed.";
 			$uploadOk = 0;
 		}

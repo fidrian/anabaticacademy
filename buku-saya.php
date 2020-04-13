@@ -85,15 +85,15 @@ function myBook($table) {
       <div class="col-md-9">
         <h1 class="register-title">Koleksi Saya</h1>
 
-        <h2>Daftar Koleksi Saya</h2>
+        <h2>Daftar Koleksi Materi Pembelajaran Saya</h2>
 
         <div class="table-details">
           <table class="table table-hover table-bordered table-responsive">
             <thead>
               <tr>
-                <th class="text-center tabel-header">Judul Buku</th>
+                <th class="text-center tabel-header">Judul Materi</th>
                 <th class="text-center tabel-header">Kategori</th>
-                <th class="text-center tabel-header">Tanggal Beli</th>
+                <th class="text-center tabel-header">Tanggal</th>
                 <th colspan="3" class="text-center tabel-header">Aksi</th>
               </tr>
             </thead>
@@ -124,7 +124,7 @@ function myBook($table) {
                       <td class="text-center">'.$row['category'].'</td>
                       <td class="text-center">'.$tanggal.'</td>
                       <td class="text-center"><a type="button" class="btn btn-info" href="buku-saya-detail.php?id='.$row['purchase_id'].'"> <i class="fa fa-info"></i>&nbsp; Detail </a></td>
-                      <td class="text-center"><a href="services/preview.php?id='.$row['file'].'" type="button" class="btn btn-warning"> <i class="fa fa-eye"></i>&nbsp;Lihat</button></td>
+                      <td class="text-center"><a href="services/open.php?id='.$row['book_id'].'" type="button" class="btn btn-warning"> <i class="fa fa-eye"></i>&nbsp;Lihat</button></td>
                       <td class="text-center"><a href="services/download.php?id='.$row['file'].'" type="button" class="btn btn-success"> <i class="fa fa-download"></i>&nbsp;Download</button></td>
                     </tr>
                   </tbody>

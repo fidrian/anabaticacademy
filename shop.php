@@ -166,8 +166,8 @@
 	}
 
 ?>
-<br>
-<div class="shop section-mini-margin">
+
+<div class="shop section-margin">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
