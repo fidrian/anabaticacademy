@@ -177,23 +177,6 @@
         echo '
           <a href="landing.php" onclick="mustLogin()" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
           &nbsp;&nbsp;';
-        echo  "<script type='text/javascript'>
-                function mustLogin(){
-                  alert('Silahkan Login/Register terlebih dahulu');
-                }
-              </script>";
-      }else{
-        echo '
-      <a href="services/collection.php?id='.$row['book_id'].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
-      &nbsp;&nbsp;';
-	  echo"<script type='text/javascript'>
-				function sukses(){
-					alert('Materi berhasil ditambahkan ke koleksi');
-				}
-			</script>";
-      }
-
-      if(!isset($_SESSION['namauser'])) {
         echo '
           <a href="landing.php" onclick="mustLogin()" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>';
         echo  "<script type='text/javascript'>
@@ -202,9 +185,16 @@
                 }
               </script>";
       }else{
+        echo '
+          <a href="services/collection.php?id='.$row['book_id'].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
+          &nbsp;&nbsp;';
+        echo"<script type='text/javascript'>
+              function sukses(){
+                alert('Materi berhasil ditambahkan ke koleksi');
+              }
+            </script>";
         echo'<a href="services/open.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>';
       }
-      
 	  
 		?>
 
