@@ -98,14 +98,13 @@
   }
 
 ?>
-<br>
 <div class="shop section-margin">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <ul class="breadcrumb">
           <li><a href="index.php">Home</a></li>
-          <li><a href="shop.php">Shop</a></li>
+          <li><a href="shop.php">Katalog</a></li>
         </ul>
       </div>
     </div>
@@ -141,11 +140,11 @@
                   $row = mysqli_fetch_assoc($detail_unggah);
                   echo '
                   <tr>
-                  <td>Tanggal Terbit</td>
+                  <td><b>Tanggal Terbit</b></td>
                   <td>'.$row['publish_date'].'</td>
                   </tr>
                   <tr>
-                  <td>Kategori</td>
+                  <td><b>Kategori</b></td>
                   <td>'.$row['category'].'</td>
                   </tr>                
                   ';
@@ -174,15 +173,27 @@
         <p class="ebook-description text-justify">Deskripsi: '.$row['description'].'</p>
         ';
       }
-      echo '
+      if(!isset($_SESSION['namauser'])) {
+        echo '
+          <a href="landing.php" onclick="mustLogin()" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
+          &nbsp;&nbsp;';
+        echo  "<script type='text/javascript'>
+                function mustLogin(){
+                  alert('Silahkan Login/Register terlebih dahulu');
+                }
+              </script>";
+      }else{
+        echo '
       <a href="services/collection.php?id='.$row['book_id'].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize"><i class="fa fa-star"></i>&nbsp; Tambah ke Koleksi</a>
       &nbsp;&nbsp;';
 	  echo"<script type='text/javascript'>
 				function sukses(){
-					alert('Materi berhasil ditambahkan');
+					alert('Materi berhasil ditambahkan ke koleksi');
 				}
 			</script>";
-      echo'<a href="services/open.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>
+      }
+      
+	  echo'<a href="services/open.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>
       ';
 		?>
 
@@ -208,16 +219,26 @@
             <div class="card box-shadow text-center card-product">
               <img class="card-img-top img-fluid" style="height:300px;" src="'.$row[1].'" alt="card-img">
               <div class="card-body">
-                <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
+                <a href="details.php?id='.$row[0].'"><h4 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h4></a>
                 <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[3].'</p>
 							  <p class="card-text ebook-category" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[6].'</p>';
-				echo '
+        if(!isset($_SESSION['namauser'])) {
+          echo '
+                <a  href="landing.php" onclick="mustLogin()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
+          echo  "<script type='text/javascript'>
+                  function mustLogin(){
+                    alert('Silahkan Login/Register terlebih dahulu');
+                  }
+                </script>";
+        }else{
+          echo '
                 <a  href="services/collection.php?id='.$row[0].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
-				echo"<script type='text/javascript'>
-					function sukses(){
-						alert('Materi berhasil ditambahkan');
-					}
-				</script>";
+          echo"<script type='text/javascript'>
+                function sukses(){
+                  alert('Materi berhasil ditambahkan ke koleksi');
+                }
+              </script>";
+        }
                 echo'</div>
             </div>
           </div>
@@ -243,16 +264,26 @@
                     <div class="card box-shadow text-center card-product">
                       <img class="card-img-top img-fluid" style="height:300px;" src="'.$row[1].'" alt="card-img">
                       <div class="card-body">
-                        <a href="details.php?id='.$row[0].'"><h3 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h3></a>
+                        <a href="details.php?id='.$row[0].'"><h4 class="card-title ebook-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong>'.$row[2].'</strong></h4></a>
                         <p class="card-text ebook-author" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[3].'</p>
 							          <p class="card-text ebook-category" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">'.$row[7].'</p>';
-						echo '
-						<a  href="services/collection.php?id='.$row[0].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
-						echo"<script type='text/javascript'>
-							function sukses(){
-								alert('Materi berhasil ditambahkan');
-							}
-						</script>";
+            if(!isset($_SESSION['namauser'])) {
+              echo '
+                    <a  href="landing.php" onclick="mustLogin()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
+              echo  "<script type='text/javascript'>
+                      function mustLogin(){
+                        alert('Silahkan Login/Register terlebih dahulu');
+                      }
+                    </script>";
+            }else{
+              echo '
+                <a  href="services/collection.php?id='.$row[0].'" onclick="sukses()" class="btn btn-lg btn-danger btn-beli text-capitalize" style="font-size : 14px;"><i class="fa fa-star"> </i>&nbsp; Tambah ke Koleksi</a>';
+              echo "<script type='text/javascript'>
+                      function sukses(){
+                        alert('Materi berhasil ditambahkan ke koleksi');
+                      }
+                    </script>";
+            }        
                       echo'</div>
                     </div>
                   </div>
@@ -268,6 +299,7 @@
     </div>
 
 </div>
+
 
 <?php
   require_once("templates/footer.php");
