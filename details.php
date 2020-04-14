@@ -192,9 +192,20 @@
 				}
 			</script>";
       }
+
+      if(!isset($_SESSION['namauser'])) {
+        echo '
+          <a href="landing.php" onclick="mustLogin()" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>';
+        echo  "<script type='text/javascript'>
+                function mustLogin(){
+                  alert('Silahkan Login/Register terlebih dahulu');
+                }
+              </script>";
+      }else{
+        echo'<a href="services/open.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>';
+      }
       
-	  echo'<a href="services/open.php?id='.$row['book_id'].'" class="btn btn-lg btn-info btn-beli text-capitalize"><i class="fa fa-eye"> </i>&nbsp; Lihat</a>
-      ';
+	  
 		?>
 
         </div>
